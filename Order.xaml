@@ -1,0 +1,783 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Order" this:Order.floor="Floor 6A" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="floor" Type="InArgument(x:String)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>1697,4110</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="36">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.IO</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="44">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Order" sap:VirtualizedContainerService.HintSize="958,4045" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="916,148" sap2010:WorkflowViewState.IdRef="LogMessage_1">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">"Picking items"</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: City Grill UiPath" sap:VirtualizedContainerService.HintSize="916,3767" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="a29419dd-4296-4e91-8da9-108eef6d96d8" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="834,3419" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ui:UiElement" Name="addressDD" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="792,32" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a29419dd-4296-4e91-8da9-108eef6d96d8" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://uipath.citygrill.ro/" DesignTimeRectangle="882, 344, 155, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='2. Make Them Tasty Menu ' parentid='shopify-section-1521705177678' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='2. Make Them Tasty Menu ' tag='A' check:innerText='2. Make Them Tasty Menu' /&gt;" Guid="427e7e96-c6c8-4b73-a03e-b404f039ebf9" InformativeScreenshot="a3edc5d4cd0520bb2680d32c8c9142b2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='City Grill UiPath' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" WaitForReadyArgument="None" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="792,32" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="a29419dd-4296-4e91-8da9-108eef6d96d8" Version="V3">
+              <uix:NCheckState.DelayBefore>
+                <InArgument x:TypeArguments="x:Double" />
+              </uix:NCheckState.DelayBefore>
+              <uix:NCheckState.Exists>
+                <OutArgument x:TypeArguments="x:Boolean" />
+              </uix:NCheckState.Exists>
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,113" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,113" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.InUiElement>
+                <InArgument x:TypeArguments="ui:UiElement" />
+              </uix:NCheckState.InUiElement>
+              <uix:NCheckState.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement" />
+              </uix:NCheckState.OutUiElement>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://uipath.citygrill.ro/collections/frontpage/products/copy-of-suit-yourself-menu-s1" DesignTimeRectangle="409, 362, 1135, 368" FullSelectorArgument="&lt;webctrl tag='DIV' class='ymq-options-box*' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='option-box-126' tag='DIV' class='spotlight-group ' aaname='                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ' /&gt;" Guid="ba75b008-583c-4225-86a0-07d6ce342831" InformativeScreenshot="b262fac5e76ee075ad7093fdcb7d4e66.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2. Make Them Tasty Menu – City Grill UiPath' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="None" />
+              </uix:NCheckState.Target>
+              <uix:NCheckState.Timeout>
+                <InArgument x:TypeArguments="x:Double" />
+              </uix:NCheckState.Timeout>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+            <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times - select food" sap:VirtualizedContainerService.HintSize="792,1409" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="10" StartAt="1">
+              <ui:RepeatNumberOfTimesX.Body>
+                <ActivityAction x:TypeArguments="x:Int32">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="idx" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="710,1246" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="ui:UiElement" Name="el" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NCheckState CheckVisibility="True" DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="668,1156" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="a29419dd-4296-4e91-8da9-108eef6d96d8" Timeout="1" Version="V3">
+                      <uix:NCheckState.DelayBefore>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:NCheckState.DelayBefore>
+                      <uix:NCheckState.Exists>
+                        <OutArgument x:TypeArguments="x:Boolean" />
+                      </uix:NCheckState.Exists>
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="586,767" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:Int32" Default="-1" Name="nel" />
+                            <Variable x:TypeArguments="s:Random" Name="rnd">
+                              <Variable.Default>
+                                <CSharpValue x:TypeArguments="s:Random" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">
+                                  <CSharpValue.Result>
+                                    <OutArgument x:TypeArguments="s:Random" />
+                                  </CSharpValue.Result>new Random()</CSharpValue>
+                              </Variable.Default>
+                            </Variable>
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times" sap:VirtualizedContainerService.HintSize="524,32" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_2" NumberOfTimes="20" StartAt="1">
+                            <ui:RepeatNumberOfTimesX.Body>
+                              <ActivityAction x:TypeArguments="x:Int32">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:Int32" Name="jdx" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="586,689" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="544,599" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="a29419dd-4296-4e91-8da9-108eef6d96d8" Timeout="0.1" Version="V3">
+                                    <uix:NCheckState.DelayBefore>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:NCheckState.DelayBefore>
+                                    <uix:NCheckState.Exists>
+                                      <OutArgument x:TypeArguments="x:Boolean" />
+                                    </uix:NCheckState.Exists>
+                                    <uix:NCheckState.IfExists>
+                                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,90" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </Sequence>
+                                    </uix:NCheckState.IfExists>
+                                    <uix:NCheckState.IfNotExists>
+                                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="462,264" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Assign sap:VirtualizedContainerService.HintSize="400,70" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Int32">
+                                              <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">
+                                                <CSharpReference.Result>
+                                                  <OutArgument x:TypeArguments="Location(x:Int32)" />
+                                                </CSharpReference.Result>nel</CSharpReference>
+                                            </OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:Int32">
+                                              <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">
+                                                <CSharpValue.Result>
+                                                  <OutArgument x:TypeArguments="x:Int32" />
+                                                </CSharpValue.Result>jdx-1</CSharpValue>
+                                            </InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <ui:Break sap:VirtualizedContainerService.HintSize="400,32" sap2010:WorkflowViewState.IdRef="Break_2" />
+                                      </Sequence>
+                                    </uix:NCheckState.IfNotExists>
+                                    <uix:NCheckState.InUiElement>
+                                      <InArgument x:TypeArguments="ui:UiElement" />
+                                    </uix:NCheckState.InUiElement>
+                                    <uix:NCheckState.OutUiElement>
+                                      <OutArgument x:TypeArguments="ui:UiElement" />
+                                    </uix:NCheckState.OutUiElement>
+                                    <uix:NCheckState.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://uipath.citygrill.ro/collections/frontpage/products/copy-of-suit-yourself-menu-s1" DesignTimeRectangle="411, 364, 172, 172" Guid="055615d9-b582-44d6-9829-1489c368b814" InformativeScreenshot="8c24992f6deb763ce96aa32d5d463f75.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* City Grill UiPath' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="None">
+                                        <uix:TargetAnchorable.FullSelectorArgument>
+                                          <InArgument x:TypeArguments="x:String">
+                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">
+                                              <CSharpValue.Result>
+                                                <OutArgument x:TypeArguments="x:String" />
+                                              </CSharpValue.Result>"&lt;webctrl tag='DIV' class='ymq-options-box*' idx='"+idx+"' /&gt;&lt;webctrl tag='LABEL' idx='"+jdx+"'/&gt;"</CSharpValue>
+                                          </InArgument>
+                                        </uix:TargetAnchorable.FullSelectorArgument>
+                                      </uix:TargetAnchorable>
+                                    </uix:NCheckState.Target>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NCheckState>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:RepeatNumberOfTimesX.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:RepeatNumberOfTimesX>
+                          <If sap:VirtualizedContainerService.HintSize="524,573" sap2010:WorkflowViewState.IdRef="If_1">
+                            <If.Condition>
+                              <InArgument x:TypeArguments="x:Boolean">
+                                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">
+                                  <CSharpValue.Result>
+                                    <OutArgument x:TypeArguments="x:Boolean" />
+                                  </CSharpValue.Result>nel &gt; 0</CSharpValue>
+                              </InArgument>
+                            </If.Condition>
+                            <If.Then>
+                              <Sequence sap:VirtualizedContainerService.HintSize="442,310" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="400,148" sap2010:WorkflowViewState.IdRef="LogMessage_2">
+                                  <ui:LogMessage.Message>
+                                    <InArgument x:TypeArguments="x:Object">
+                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">"Picking item #" +idx</CSharpValue>
+                                    </InArgument>
+                                  </ui:LogMessage.Message>
+                                </ui:LogMessage>
+                                <uix:NClick ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="400,32" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a29419dd-4296-4e91-8da9-108eef6d96d8" Version="V3">
+                                  <uix:NClick.DelayAfter>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:NClick.DelayAfter>
+                                  <uix:NClick.DelayBefore>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:NClick.DelayBefore>
+                                  <uix:NClick.InUiElement>
+                                    <InArgument x:TypeArguments="ui:UiElement" />
+                                  </uix:NClick.InUiElement>
+                                  <uix:NClick.OutUiElement>
+                                    <OutArgument x:TypeArguments="ui:UiElement" />
+                                  </uix:NClick.OutUiElement>
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://uipath.citygrill.ro/collections/frontpage/products/copy-of-suit-yourself-menu-s1" DesignTimeRectangle="411, 364, 172, 172" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='ymq-options-img-label ymq-dicopy ymq-attrib-item-126_1' aaname='                                                                                                                                                      ' check:text='checked' /&gt;" Guid="9d6f2c92-3f2a-4ff3-84e4-c2478e37321e" InformativeScreenshot="77760cffef3a6f30acf5d40ad1c91f76.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2. Make Them Tasty Menu – City Grill UiPath' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="None">
+                                      <uix:TargetAnchorable.FullSelectorArgument>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">
+                                            <CSharpValue.Result>
+                                              <OutArgument x:TypeArguments="x:String" />
+                                            </CSharpValue.Result>"&lt;webctrl tag='DIV' class='ymq-options-box*' idx='"+idx+"' /&gt;&lt;webctrl tag='LABEL' idx='"+rnd.Next(1, nel+1)+"'/&gt;"</CSharpValue>
+                                        </InArgument>
+                                      </uix:TargetAnchorable.FullSelectorArgument>
+                                    </uix:TargetAnchorable>
+                                  </uix:NClick.Target>
+                                  <uix:NClick.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:NClick.Timeout>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </uix:NClick>
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="462,154" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:Break sap:VirtualizedContainerService.HintSize="400,32" sap2010:WorkflowViewState.IdRef="Break_1" />
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.InUiElement>
+                        <InArgument x:TypeArguments="ui:UiElement" />
+                      </uix:NCheckState.InUiElement>
+                      <uix:NCheckState.OutUiElement>
+                        <OutArgument x:TypeArguments="ui:UiElement">
+                          <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">
+                            <CSharpReference.Result>
+                              <OutArgument x:TypeArguments="Location(ui:UiElement)" />
+                            </CSharpReference.Result>el</CSharpReference>
+                        </OutArgument>
+                      </uix:NCheckState.OutUiElement>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uipath.citygrill.ro/collections/frontpage/products/copy-of-suit-yourself-menu-s1" DesignTimeRectangle="409, 362, 1135, 368" FuzzySelectorArgument="&lt;webctrl type='' parentid='option-box-126' tag='DIV' class='spotlight-group ' aaname='                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ' /&gt;" Guid="ba75b008-583c-4225-86a0-07d6ce342831" InformativeScreenshot="b262fac5e76ee075ad7093fdcb7d4e66.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2. Make Them Tasty Menu – City Grill UiPath' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="None">
+                          <uix:TargetAnchorable.FullSelectorArgument>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">
+                                <CSharpValue.Result>
+                                  <OutArgument x:TypeArguments="x:String" />
+                                </CSharpValue.Result>"&lt;webctrl tag='DIV' class='ymq-options-box*' idx='"+idx+"' /&gt;"</CSharpValue>
+                            </InArgument>
+                          </uix:TargetAnchorable.FullSelectorArgument>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NCheckState>
+                  </Sequence>
+                </ActivityAction>
+              </ui:RepeatNumberOfTimesX.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:RepeatNumberOfTimesX>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="792,148" sap2010:WorkflowViewState.IdRef="LogMessage_3">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">"Selecting floor"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <uix:NSelectItem DisplayName="Select Floor" sap:VirtualizedContainerService.HintSize="792,32" sap2010:WorkflowViewState.IdRef="NSelectItem_1" ScopeIdentifier="a29419dd-4296-4e91-8da9-108eef6d96d8" Version="V3">
+              <uix:NSelectItem.Item>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">
+                    <CSharpValue.Result>
+                      <OutArgument x:TypeArguments="x:String" />
+                    </CSharpValue.Result>floor</CSharpValue>
+                </InArgument>
+              </uix:NSelectItem.Item>
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="9">
+                  <x:String>Please choose</x:String>
+                  <x:String>Floor 1A</x:String>
+                  <x:String>Floor 2A</x:String>
+                  <x:String>Floor 3A</x:String>
+                  <x:String>Floor 5A</x:String>
+                  <x:String>Floor 6A</x:String>
+                  <x:String>Ground Floor B</x:String>
+                  <x:String>FOUNDATION</x:String>
+                  <x:String>Floor 1C</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://uipath.citygrill.ro/collections/frontpage/products/copy-of-suit-yourself-menu-s1" DesignTimeRectangle="729, 432, 400, 36" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' /&gt;" Guid="0d961641-649f-4531-8d10-8c39b30411c6" InformativeScreenshot="e301a951cd88cf3f775769b36fb18d02.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2. Make Them Tasty Menu – City Grill UiPath' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="729, 405, 99, 22" ElementType="Text" FriendlyName="'Delivery Floor'" FullSelectorArgument="&lt;webctrl parentname='option-box-ymq-variant-Delivery Floor' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='option-box-ymq-variant-Delivery Floor' tag='SPAN' type='' class='ymq_lable required' aaname='Delivery Floor' check:innerText='Delivery Floor' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NSelectItem>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="792,148" sap2010:WorkflowViewState.IdRef="LogMessage_4">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">"Adding to cart"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Add to Cart'" sap:VirtualizedContainerService.HintSize="792,32" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a29419dd-4296-4e91-8da9-108eef6d96d8" Version="V1">
+              <uix:NClick.DelayAfter>
+                <InArgument x:TypeArguments="x:Double" />
+              </uix:NClick.DelayAfter>
+              <uix:NClick.DelayBefore>
+                <InArgument x:TypeArguments="x:Double" />
+              </uix:NClick.DelayBefore>
+              <uix:NClick.InUiElement>
+                <InArgument x:TypeArguments="ui:UiElement" />
+              </uix:NClick.InUiElement>
+              <uix:NClick.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement" />
+              </uix:NClick.OutUiElement>
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://uipath.citygrill.ro/collections/frontpage/products/copy-of-suit-yourself-menu-s1" DesignTimeRectangle="729, 847, 176, 50" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Store Closed'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='*addtocart-js' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='*addtocart-js' check:innerText='Store Closed' /&gt;" Guid="b486dad0-1e7e-4c09-afe2-75186f636365" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJMAAAA2CAYAAADDNKtIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUYSURBVHhe7Z3PSxtpGMftn9Lj7nFve/OSaw+9rSDrweJhwUPRQyEsBg/FHEREtml3lQaqC1UqixX8hYsWNOwWlUDKZlfRJbBIDUKCpGly+O7zzswzmUxGjb6tK8v3Cx9w5n1n8s7MJ8+8k4PTAYb5RKFMTNupffjg/RWdFpn++eNPrD75EU96HmDgy6/Qf/cLQhy+/7oT4998i9UfnuHk6G/PmEaaZDrc3XMkitoRIUGMVH9lfvPMcePLZCoSRSJX4dmD75oqlC+TubVFbUDIRaylfvIMCsjEqkSug7nd1T9+dBzyZeJkm1wXfcrzZYrqREg7aCgTsUZDmYg1GspErNFQJmKNhjIRazSUiVijoUzEGg1lItZoKBOxRkOZiDUaykSs0VAmYo2GMlkyv1UG9uci2z432/tAZWsksu0m0dwSmfqwvlVApe4Npl5FcXGg0f5wDoe/zyHdtM3NkRpdwfFp1RucRMZX2Rpz2ijTLZNp4pcCUD3A28H7znKiawTr4wGZhjOolDKY1+UbJPXyALV6GcevRjDR6a4z49t+7l5EynTLZLrwgsjFbEpAqkR8QSqGt95Ui/wCZr0LbnBOdjaD4zNp97YLb1P8dQxJr38L3QsooorD8Vh0u9A6drfK1rTKlgrIP+3z28OfX3ih24m4TzMomrE6bWVpG0DCawvvt5Kdxt4RZWohMfkONbloxa1pzNyL6BNVmbrncFytSsWIuzLcG0P+PVDLTfkXwMiEegF7cZGhM4ZE5xQKsk1xadjZJtEvyyWg8DxalolFqZiXVMSwTPNvZPk0g+Uus88Y0i/MsZ0gN+i2b+dljNkpb8xxzPR6+xrcQEkEOpx0BUoOraBYb2yXMmMx1bvf7Pc+ZpdELDk8yhRBcki/sVWUslJhglJFyJReOxELVjARWNf/WPrhANvespGptpNqtIu0YTkcGURAv0+47ZJbWHMfkVOqzeF4sE8Mb00FeTPsLK9nZe4l4246PsE5HtlPoxK54y+tmdv9AHLyRSku9vht/XdHkJcvAmW6gOTQHApy4vB+AzO6PkKm6Ast1cpUgUfucsucInzL1JwjzNUrk/n8MvLDEX3y0+5y54B/u3Juy55UTp+IuON3xTl+2dinoeX4/iM0t04mh1CFabsyje9K6W+uTE0n21Sms10s6/JlmFvPleZMUZWpB3vipFYmH5FqMydV6mjBOYbI4/FhZWqb9OQCNh/1uCW+swfL5gLJRX+tfYZEpvoBNs232Mx9zLpemVOYeZbOf7pSyMtt0tzWgnOm5pMtF0D6VHYac7NEVxzpbm0PE5M5kFzktp/mYljeEUFOd7HuzW1mXsnTIGTe5s2NZobGkHI+O4ZZs2+pwM5PHt4csLjU+JzkYBwpZ7+ynZGNc6bLSf/8DpXAzzi1UzlpZtLs9+mTiavXQU7+rLc+ObqBonw7nUhFME846fDTXPhk904hXwjcUqpyoR8G2luQSfTkRuh3pjJK8hRo2ptlEkzFyZabnuZyo+5PHobX0t9vO5O2x43jdJ/0Ap9TEim9tpanuf0V5Pg0R/5vaCgTsUZDmYg1GspErNFQJmKNhjIRazSUiVijoUzEGg1lItZoKBOxRkOZiDUaykSs0VAmYo2GMhFrNJSJWKPxZeK/bibXpeVfN/OfypPrEPlP5fm6C3IdIl93wRfxkKty7ot4TPiKMNIuF74iTMOXF5LzaPvlhesdHYRcyOqdO5HrFcpEPhEd+BeCSyJYI+ESfQAAAABJRU5ErkJggg==" InformativeScreenshot="0cfc6f5c9e0910dcb9af28dd9ad6cc32.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*City Grill UiPath' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.Timeout>
+                <InArgument x:TypeArguments="x:Double" />
+              </uix:NClick.Timeout>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DelayBefore="1" DisplayName="Click cart 'BUTTON'" sap:VirtualizedContainerService.HintSize="792,32" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a29419dd-4296-4e91-8da9-108eef6d96d8" Version="V3">
+              <uix:NClick.DelayAfter>
+                <InArgument x:TypeArguments="x:Double" />
+              </uix:NClick.DelayAfter>
+              <uix:NClick.InUiElement>
+                <InArgument x:TypeArguments="ui:UiElement" />
+              </uix:NClick.InUiElement>
+              <uix:NClick.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement" />
+              </uix:NClick.OutUiElement>
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://uipath.citygrill.ro/collections/frontpage/products/copy-of-suit-yourself-menu-s1" DesignTimeRectangle="1645, 527, 54, 54" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl parentid='modalAddToCartProduct' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='modalAddToCartProduct' tag='BUTTON' type='button' class='close' aaname='' /&gt;" Guid="2c5c3ee3-8a43-4135-bca6-ce997b056d41" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAYAAADhu0ooAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFSSURBVGhD7dahjoNAEIDhe3ReAo9AYDBYBJpgQCFQEAQWBQbmMnedhHLTNd3ZXKYzyS/oNqRfILv9iqIIPiGDasug2jKotgyqLYNqy6DaMqi2DKotg2rLoNoyqLbEoVmWQdd1EMcxu47VdQ1lWbJrvhKFpmkK67rCeZ4wjiOLbdsWjuOAbdtEsWJQQtJwWELSSGLFoFVVwb7vD8LvXLF3JA5e4+fc/d5N9NV9hcUnHRKJiW9GHPY+0khMHIq5sCGQWBAo1vf9g/Y8y7I4jx5fBYFyGw+N6+jxmTjUhaQJgRWFcki8nqbJefRw93o3MWjTNCySNp5XR88wDH/u5SMxKD6ZeZ5/fjzOFUndsXi+4j+q63d8JfrqEpZDUoSVRGLimxFii6Jg16g8zyFJEnbNV+LQ/5JBtWVQbRlUWwbVlkG1ZVBtGVRbBtWWQbX1IdAIvgEYeIuQPaOjpgAAAABJRU5ErkJggg==" InformativeScreenshot="eea88f02a266aa3ec1c30b752c8e0e91.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*City Grill UiPath' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.Timeout>
+                <InArgument x:TypeArguments="x:Double" />
+              </uix:NClick.Timeout>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DelayBefore="1" DisplayName="Click cart button" sap:VirtualizedContainerService.HintSize="792,32" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a29419dd-4296-4e91-8da9-108eef6d96d8" Version="V3">
+              <uix:NClick.DelayAfter>
+                <InArgument x:TypeArguments="x:Double" />
+              </uix:NClick.DelayAfter>
+              <uix:NClick.InUiElement>
+                <InArgument x:TypeArguments="ui:UiElement" />
+              </uix:NClick.InUiElement>
+              <uix:NClick.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement" />
+              </uix:NClick.OutUiElement>
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://uipath.citygrill.ro/collections/frontpage/products/copy-of-suit-yourself-menu-s1" DesignTimeRectangle="1738, 111, 36, 34" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'1'" FullSelectorArgument="&lt;webctrl tag='DIV' class='tt-cart tt-dropdown-obj' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                                  1     ' class='tt-dropdown-toggle' tag='BUTTON' type='' check:innerText='1' /&gt;" Guid="768284c3-509d-4070-bef7-73d6394841a8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAmCAYAAAC29NkdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIjSURBVFhH7ZaxS+NQHMfv38joJC6XsW5drFPP4bji4iKFchQsKAilckMoiCiU0KUI4i3axaMFsTccFRFBKmQopIuDHFEodjOi0u3re+3Ti+YlTV/ay8HlA9827yXDh5ff+718wD9A6/gEpcUUMhNTtgQuePGjivXZOFeOJlBBunLfpqNcsZcEJvhkmtj5usSVsiYwQe3wiCtEo2R2cXnTBcxGcIL7qzmuXGZiH7fde9yeX5FVDlBQic5y5Gg+Y3OO/OcbwQk+3t1hZfIjR86S/07QbH7HSjwCSYpgIVuG/sBuOOD8illGKtgqIR7fQL1Ndh66MH7mkFiqodO/y8V5k7CMUlAvylBOqdwLJmrLCZR/syEHtzbTyygFtYIEVWMDBm/OyvgbdbuCpCSRmhscea1O1tTOeI86TYVU6C+R6wqadeRmStD70zbG9rHQqSaRPDB613oxArXZu3zlz5wOVVZwZi3Rd4zlc8u+MZzooJJKonLNhg7QmqSrSXf31qcvpE/KvQgKmqhnYyi12HAAgzaMG4KCBsrzadTcGp0F44CUQ9Xjw+8QFNSgSir59Ub3VIFcdNom7ogJ0haTqrieFG8gJ00sy281gxATbKqQ82fkUPNIp4b0fJkUxvAICZq/cohtD/PKaElseC4JK0KCxl4C6cNhip61mjYbDoGQIO2BvCPNPbKtmXtBrAb/IqGgX0JBv4SCfgkF/RIK+iUU9AfwDHd7+5C8MCB9AAAAAElFTkSuQmCC" InformativeScreenshot="1aa12aa37f01ba1340ec06fab5a7c285.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*City Grill UiPath' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.Timeout>
+                <InArgument x:TypeArguments="x:Double" />
+              </uix:NClick.Timeout>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DelayBefore="1" DisplayName="Click 'VIEW CART'" sap:VirtualizedContainerService.HintSize="792,32" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a29419dd-4296-4e91-8da9-108eef6d96d8" Version="V3">
+              <uix:NClick.DelayAfter>
+                <InArgument x:TypeArguments="x:Double" />
+              </uix:NClick.DelayAfter>
+              <uix:NClick.InUiElement>
+                <InArgument x:TypeArguments="ui:UiElement" />
+              </uix:NClick.InUiElement>
+              <uix:NClick.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement" />
+              </uix:NClick.OutUiElement>
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://uipath.citygrill.ro/collections/frontpage/products/copy-of-suit-yourself-menu-s1" DesignTimeRectangle="1696, 343, 68, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'VIEW CART'" FullSelectorArgument="&lt;webctrl aaname='VIEW CART' class='btn-link-02' parentid='shopify-section-header-template' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='VIEW CART' class='btn-link-02' parentid='shopify-section-header-template' tag='A' type='' check:innerText='VIEW CART' /&gt;" Guid="2be2dcf4-80d6-417d-aa63-8e2ab6f9f377" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAaCAYAAAAUqxq7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMbSURBVFhH7ZaxSyNBFMbvX7EUUixXXJfSKmARuOKKK4RACiEWEtKkUCQIW1hYyF4hWKhXKAgSC+U4UeEUDESECIKisIWCcpDAwRIC382bfZvMzm6cTT8/WNg3s7vz3jfvvdlPsHyIFciAFciAFciAFciAFciAFcgAC/SG47lpeKdBaCp0DyuoLF2hT8a1i8rcPl7lTBubU9OoaNfmNdA/XVGeY7onWJty5LxKZ81BY++NLZ0A/i8PbiHP33ewWKig+czTjFxPzC9v+zwSofn4uQB3/Qrvg5Q55VJ9HGaQFKJ+FgoxhIRz4F2wcAmByjh+kUYcKUYV5122BTKInIPKaptHiEcczM5gt8NmjAA3qwUsfvfQ8kcb1/fbuI+t2cP5gtjcVRe14g7iEmk+Bj7O6zOo/XjkASYWV5xRif1twtWCwvMOlnMubqTigqwCsbCjnQhwWRdBHDbhqd8jIVVboX8hBBUBP6XMxZB+r+AyuMNuvoiDBx6XpPj4R8RQauKdTUkmgXgn1o56bAP+9jfU1u/YEmQWCHjaKqK2we8OxLM5Ep/WEBlzGw5LZxdOoO5JSCjo+NIb8bpXHmb+/YbIjmhNiZ5Bj2iWnGQpZhOIy2DosI+Dopb+CYG0+lUX6XiozYoMoHt6j79LpRwFQQEt/9T7BhH2RL1fJSEflRZAa+Y9dIZZp/soetB2G109K7MKhOBKlACX2cMO6lGAERNk0ChrQiGG2fCyj4b8rhChNL7/ZMog8lGWF9sDKjMlQ1UfA3GfL6Svl1kg4VhryZFlRiXycSoaBIr6zumdaMTqc5QdolfcnsGbctEa02O6R1VjDyLhYxkcXdGpq/k49pvZBRLQw3UPu7GgmIkEYodKZTS004V6W2Ohilpq/2EGPo7nv4w/xRLZwlCZ5VbQkq9oPg7EqSlKUu2zkokEkguLXZhvJp1PCKTtnLhifYPKSYzVt7RjlU7HtHGdQQ/3h278P+hrFb/pP4h8SRzrBPWl6J8uZRNZwMt/bBMTCWSJYQUyYAUyYAUyYAUyYAUyYAUyYAUyYAUyYAX6EOA/1Wu3UOmwrm0AAAAASUVORK5CYII=" InformativeScreenshot="e9dbb9016997d557d448d7ffdc7e96ca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*City Grill UiPath' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.Timeout>
+                <InArgument x:TypeArguments="x:Double" />
+              </uix:NClick.Timeout>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="792,148" sap2010:WorkflowViewState.IdRef="LogMessage_5">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">"Checking out"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <uix:NClick ClickType="Single" DelayBefore="1" DisplayName="Click 'checkout'" sap:VirtualizedContainerService.HintSize="792,32" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a29419dd-4296-4e91-8da9-108eef6d96d8" Version="V1">
+              <uix:NClick.DelayAfter>
+                <InArgument x:TypeArguments="x:Double" />
+              </uix:NClick.DelayAfter>
+              <uix:NClick.InUiElement>
+                <InArgument x:TypeArguments="ui:UiElement" />
+              </uix:NClick.InUiElement>
+              <uix:NClick.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement" />
+              </uix:NClick.OutUiElement>
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://uipath.citygrill.ro/cart" DesignTimeRectangle="1010, 779, 500, 50" ElementType="Button" FriendlyName="'Store Closed'" FullSelectorArgument="&lt;webctrl name='checkout' tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl name='checkout' tag='BUTTON' type='submit' class='btn btn-lg' aaname='Store Closed' check:innerText='Store Closed' /&gt;" Guid="6acb415f-db40-42bb-9f10-b00e187e0c05" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAfgAAAA2CAYAAAArvYsPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAWUSURBVHhe7dtBSxtbGMbx+6HuptxNP0I22dWFdFMoCEJ3UtFVFoZAqQVRXChEKqgXK7qIUEWkCjYQVAQl0KDM4ooaiIgYF+89ZzLv5EwcoUIs5vB/4Acd58xkIpTnnJnxLyGEEEKId6HgCSGEEA+TWvBbs0X58uatfHz1Wob+/gcAALwwtqNtV9vOTkui4C/PgnBw2okAAMDLZLvbdribRMFT7gAA9Cbb4W7igrdL/LQDAABAb3Bv18cFz+odAIDe5q7i44LnhToAAHqb7XJNXPBpAwEAQG/RUPAAAHhEQ8EDAOARDQUPAIBHNBQ8AAAe0VDwAAB4REPBAwDgEQ0FDwCARzQUPAAAHtFQ8AAAeERDwQMA4BENBQ8AgEc0FDwAAB7RUPAAjBU5l2upFtL2PbPlmkijLGtp+wA8mYaCB7poZrYsV43oP5VJ82xT5uP9k3JY3ZSSM/5PyucW5TS4luZ9dHH3d3L7qxRdHwUP+EJDwQPd8r4kV3In56s5GbfbmQFZK844BW9LtCY/4+0/J/+pLLem0K/2FmWpL/p5X042FvT6KHjAFxoKHuiWginRxwo83OfGHfdBtveC9sq6EUh19kN87NretchZWaoXdqce13FM/UR2hrLxMUmTcnojcrXePudDnQWflW+rNTMpiM5/d20mLgXJ6/hMQSpVc11RmkeL0XH2TkFJzuvRDjup2J5sTXgi4V0Ocz1h7HV/Dyh4oIs0FDzQLZk5Ce5M2QVl2RntTxmTvoJf2zVFWS/Lxjtb0FmZXziRplzK8Wi03xa8Kd/Aln4mG5bs0talOeZAtsNS75dvtiQvfsiSc97Y1IE07edmUvbFkgU//W9Nmnc1qUTfY3yiLA1T1kExmkSY/XJzItvh3YB+WRqNJg/h78CU+vdCWOr5IbPdEAm+RscNbkZ3OUbC7zE+ZrbN74yCB7pHQ8ED3dTXXtk2L06kMuYWfVrBmwI0xXk65f4sK5UzkdvdQrgdFnywKdPx/hE5Nqv582V3xW7PbSYFw7rt+K1b4G7Bt85/tT6QGBNeR3WltT1rJiH3gRwmvp9RPHnwWeFxx3Phv+ftxCTxXaL9FDzQNRoKHngOpuh/Hpkyc1bi6QWfXDmrVpm2bnuH//4VFWvos1SdF/naeeQZ+pNX8K3zny93jLEThfguQVbmi9Gt9rpZ6WvR2zFpia7/4XeJjqHgga7RUPDAs+ksyrSCT1vBD8hh0LGCT5Ri+gr7UdGjg99/Bp9+/o19cxJdwcf0kUIglfdm267gbw5kIzGmjRU88Pw0FDzQLcNzUvmak+lwpZyV6Sn7Yp0p7wkdY0v0Uqq5bPws3Y4Li9N5nr60WhNbmIeDrePSVr2tZ+RmzKeB6DzOc/AUM2aV3HzCW/Qz62aGYc8frsyd7zIVPRYYLUhpsLVqz+fK0ogfD5hJTd1MTvbbn5N/l5N5W/7hcT/MWJ7BA89JQ8ED3TK8IkHdtlWUzjfPTVGu7drb9ib3NdnRn2dGZOfI+fv0RiDHE+1n26m3tc25wrfcnY+73W89537M+FhJgv86/g7+eOWRP5Prl9J2kHiLPlholXK4f8IUvn62nThsfW7vG5yTamCuWWMnCs67AYm36Bs1OTSfQ8ED3aOh4AEA8IiGggcAwCMaCh4AAI9oKHgAADyioeABAPCIhoIHAMAjGgoeAACPaCh4AAA8oqHgAQDwiIaCBwDAIxoKHgAAj2goeAAAPKKh4AEA8IiGggcAwCMaCh4AAI9o4oL/+Op16kAAANAbbJdr4oL/8uZt6mAAANAbbJdr4oLfmi2mDgYAAL3BdrkmLngbVvEAAPQmd/Vukyj4y7OAkgcAoMfY7rYd7iZR8Bq7xLeDefEOAICXyXa07Wr3tryb1IInhBBCSG+HgieEEEK8i8j/Vehdo9BoEUgAAAAASUVORK5CYII=" InformativeScreenshot="0a19a058b44071755e58b676ba755272.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*City Grill UiPath' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.Timeout>
+                <InArgument x:TypeArguments="x:Double" />
+              </uix:NClick.Timeout>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="792,148" sap2010:WorkflowViewState.IdRef="LogMessage_6">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">"Choosing address"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <uix:NCheckState DisplayName="Check App State - choose address" sap:VirtualizedContainerService.HintSize="792,32" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="a29419dd-4296-4e91-8da9-108eef6d96d8" Timeout="2" Version="V3">
+              <uix:NCheckState.DelayBefore>
+                <InArgument x:TypeArguments="x:Double" />
+              </uix:NCheckState.DelayBefore>
+              <uix:NCheckState.Exists>
+                <OutArgument x:TypeArguments="x:Boolean" />
+              </uix:NCheckState.Exists>
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="462,489" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="400,367" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" InteractionMode="DebuggerApi" ScopeIdentifier="a29419dd-4296-4e91-8da9-108eef6d96d8" Shortcuts="[d(hk)][k(up)][u(hk)]" Version="V3">
+                    <uix:NKeyboardShortcuts.DelayAfter>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:NKeyboardShortcuts.DelayAfter>
+                    <uix:NKeyboardShortcuts.DelayBefore>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:NKeyboardShortcuts.DelayBefore>
+                    <uix:NKeyboardShortcuts.DelayBetweenShortcuts>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:NKeyboardShortcuts.DelayBetweenShortcuts>
+                    <uix:NKeyboardShortcuts.InUiElement>
+                      <InArgument x:TypeArguments="ui:UiElement">
+                        <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="ui:UiElement" />
+                          </CSharpValue.Result>addressDD</CSharpValue>
+                      </InArgument>
+                    </uix:NKeyboardShortcuts.InUiElement>
+                    <uix:NKeyboardShortcuts.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement" />
+                    </uix:NKeyboardShortcuts.OutUiElement>
+                    <uix:NKeyboardShortcuts.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:NKeyboardShortcuts.Timeout>
+                  </uix:NKeyboardShortcuts>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,113" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.InUiElement>
+                <InArgument x:TypeArguments="ui:UiElement" />
+              </uix:NCheckState.InUiElement>
+              <uix:NCheckState.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement">
+                  <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">
+                    <CSharpReference.Result>
+                      <OutArgument x:TypeArguments="Location(ui:UiElement)" />
+                    </CSharpReference.Result>addressDD</CSharpReference>
+                </OutArgument>
+              </uix:NCheckState.OutUiElement>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://uipath.citygrill.ro/checkouts/c/94ba204ce46af09c7e988dcaf28f9345/information" DesignTimeRectangle="62, 408, 502, 46" ElementType="DropDown" FullSelectorArgument="&lt;webctrl aaname='Available addresses' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Available addresses' tag='SELECT' /&gt;" Guid="3fde5f88-f258-4bf6-a016-4da814b4d342" InformativeScreenshot="319d0e12f0c89ec5dcaeab372cb60da0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Information - City Grill UiPath - Checkout' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="None" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="792,148" sap2010:WorkflowViewState.IdRef="LogMessage_7">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">"Continue'ing"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click 'Continue'" sap:VirtualizedContainerService.HintSize="792,32" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a29419dd-4296-4e91-8da9-108eef6d96d8" Timeout="1" Version="V3">
+              <uix:NClick.DelayAfter>
+                <InArgument x:TypeArguments="x:Double" />
+              </uix:NClick.DelayAfter>
+              <uix:NClick.DelayBefore>
+                <InArgument x:TypeArguments="x:Double" />
+              </uix:NClick.DelayBefore>
+              <uix:NClick.InUiElement>
+                <InArgument x:TypeArguments="ui:UiElement" />
+              </uix:NClick.InUiElement>
+              <uix:NClick.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement" />
+              </uix:NClick.OutUiElement>
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://uipath.citygrill.ro/checkouts/c/f47643f5a91c3bb93827b1ae02c228ed/information" DesignTimeRectangle="455, 745, 109, 56" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Continue'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Continue' check:innerText='Continue' /&gt;" Guid="2bb4fdaf-344f-4277-8314-c87d2b0cbfda" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHEAAAA8CAYAAABRuFViAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJrSURBVHhe7ZxPSgMxHEa9hSvv5I30BoJ36EbwEEUQD9CFuJLuigizKoKLOL+ZfGkySVtFneTT78Fb6Pw1bzLtQnLiBD2K+AfIIt4+vrjzm5U7u35wp1f3shGth3WxPlOSiBfL5+IJZFtap5gQ0QqXDpBtGs/IENGmamln2abWC4SI+gzk0nqBELG0o2xboIjEAkUkFigisUARiQWKSCxQRGKBIhILFJFYoIjEAkUkFigisUARiQWKSCxQRGKBIhILFJFYoIjEgooRn93dm7+4p1v/5H/bbdyTe3d3y/Hny/W7c2+du8z24xXUibjsXNdfM41mg97zuol+9x3TiH9RUCHiOAOLs26Imw78MIMCW7cI+/tI663fZmC7fyA8T6vJTByus+2Pjc4dzdJ81o7ns/OU76vOwwLmj1gItc9xoHbh0p99qDDY/vUcZnI6E/OI0313D9axiNn2lT1I8QM2j2D+iJ/+g/OnP53F+fZ0cI9FTB+kxWt/Mh/1cMT0vPHxP/uZflzQbsQ9M3Y3WJUiYhYX+D8R98TJbDriJ+5/BkFbX2ySMHmkdl6n0/uqI6gQsXcYxGnIcXDiwRsG88gXm9+IOL7yJ8dG15reV62woE7EQR8tojQ7MYAjhwcujejD9Nh5vxQxOtbo1pvhDRBfK95uzB3QBBUjyu8KFJFYoIjEAkUkFigisUARiQWKSCxQRGKBIhILFJFYoIjEAkUkFigisUARiQWKSCxQRGKBIhILFJFYECJqqUwui0tlatFaLouL1mr5aC6Ly0cbWsidw70LuQMrbFNVn5FtaT2sSzwDQRZR8KGI9Dj3AUynn1DWZ8a6AAAAAElFTkSuQmCC" InformativeScreenshot="5cb66c397fcfc10e82f7589fec744c16.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Information - City Grill UiPath - Checkout' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="481, 763, 56, 21" ElementType="Text" FriendlyName="'Continue'" FullSelectorArgument="&lt;webctrl aaname='Continue' parentid='Form0' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Continue' parentid='Form0' tag='SPAN' type='' check:innerText='Continue' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADwAAAAZCAYAAABtnU33AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFUSURBVFhH7ZRLDoJADIa9hdf1Bp7CgxATTuCKFWHHwmRWxIRFnUeBdlpEQ1AzTJN/AZ1p+7WFw/Fcwp6UgVNXBk5dGTh1KcA1XB/AzDR1dGaNWqigh2sRnk9ND/AwcBLnthEHLgwYAegKtHZvybs14sDfFgEOk1Wn6RvBi/STGa2Dy3gegZoOfc4GPzYPrbpFE/Z5OnuXxCbTl9sQ4rk4el2ysROwAjWnEHSC5M8INRaGn8i4IXzCEjg+Ow1hCVj4b67pdBgUWHHqkl3l2yH9vJAlYN70y90Gwwa8BuZx6X26tZ8Dz2zCFPhHwMN2KKYDz4AI/TXwcv3v/bQYhAT6n5WO65IiwFY+YQwdAtFEPvHCT2sL4PDZRXdJrrgurRYO7IWAxLSpD8mCvU7CgRHCmov7ETC568w0rd8smov6nVGfkwKctjJw6srAqSsDp66dAZfwBIJ7eT4sVTP+AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="792,148" sap2010:WorkflowViewState.IdRef="LogMessage_8">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">"Completing the order"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Complete order'" sap:VirtualizedContainerService.HintSize="792,32" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a29419dd-4296-4e91-8da9-108eef6d96d8" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://uipath.citygrill.ro/checkouts/c/f47643f5a91c3bb93827b1ae02c228ed/payment" DesignTimeRectangle="414, 674, 150, 56" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Complete order'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Complete order' check:innerText='Complete order' /&gt;" Guid="ea22276a-001c-408b-a291-c35121fb7bcd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJoAAAA8CAYAAACeuqPkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN9SURBVHhe7Z1NatxAEEZzi6xyp9wovkEgd/AmkEMYQ8gBvAizMrMzwTCrwZCFou7WJ1W3yvPjTEmGeR+8hUatVk31U3s2Rh86QhYIopFFMhPtx+8/3efvD92nb7+6j19/ApxMcia5kxxqU4n25e7RnQDgXJJLNqNoyULvAoC3Yne2UbS05XmDAd5KckoZReM3GVya5JQyiuYNBPhfFESDUBREg1AURINQFESDUBREg1AURINQFESDUBREg1AURINQFESDUBREg1AURINQFESDUBREg1AURINQFESDUBREg1CUdUV72A93V/bdrTduEZ66TV/B5sE715LG/u3u77xzy3D73Bf7/OSee08oq4mWG9WIdbP923+21gIiWgTKOqLlnczfveYNLAIou+30v6dZzH5skbYkiVKEHWLmSuN226fu/mU4V8nSivZoxvV52XU3Zpwyja8/PypBtZvX0qY6N9tdt7Pn7nScsu82bZ+avw72gUn92PXzqb7THqbLoKwi2ulPY1m8Sa76WEKpcaNgmjsvzrSIEnJsdF4cnbeiFcms1HXNaexxSe31FdV958elTvMgDpLVdfdRPfm4HT/NV/pi610OZQXRjiyCITdo3EkGTFNn55sG615aoLngthYjS7pHe99Krlq0XEf74ORavF3b//62trZOrw/TmPo7VtcMc7h9XAjlXYs2F6PHLKAvml3cuWivL/AkWp7XjS9ansONJ5oR2nxuxWi/t9eHaXyZz81wzZWK5jfOwx23lGgHF8YR7YTvU4gRrZ3PcrWizX5TGGxT3AYd/dN5WLR6wezuahbsQH2FWrTzFtLf0W1tbZ3e/NMYfz7LefVdFmUd0Xpyo5rFzA3pMz2dZfGnJtbHbxLNCFILZXeGcl0l5WysmWdW55HFzXO1dRzaIW1tGm/GtPM18l21aAmJNcXbRUqTlYOLedKOtjfzzWVpJZ9S11akNfXke5scW1jJkmPr8ETrsfP3c983Y9penix9MMqqoi2Nu4AQioJoEIqCaBCKclWiwfIoiAahKIgGoSiIBqEoiAahKIgGoSiIBqEoiAahKIgGoSiIBqEoiAahKIgGoSiIBqEoiAahKIgGoSijaLxGES6N+xpFXgwLl8Z9MSyvuoZL477qOoWX98OlePXl/UqyMG15/GaDc0nOJHfsTqbMRCMkIohGFkjX/QMNor5udXY5kgAAAABJRU5ErkJggg==" InformativeScreenshot="604aa9e941f1095fb4f7c457699da1d0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm order - City Grill UiPath - Checkout' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="441, 692, 97, 21" ElementType="Text" FriendlyName="'Complete order'" FullSelectorArgument="&lt;webctrl aaname='Complete order' parentid='Form1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Complete order' parentid='Form1' tag='SPAN' type='' check:innerText='Complete order' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGUAAAAZCAYAAAAonOB1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJOSURBVGhD7ZZBjsIwDEXnFnNdbjCn4CAIiROw6gqxY4HUFUJikUnsuvl2TFtGmhKJWPqLEtf59ksjvr5/DqGpLjUoFapBqVANSoVqUCpUg1KhGpQKVUI53oKOW9janNV0CV100B29NauU+wj7nbe2jrbXaPZ6cddekYJCRQ2EzfkRf3tXs58Ohb4Q/6soN+NhSfTn07hGEGMuA+ZIQ2W4Q0CtlNefL2F/H9bUYC2UE+TFuPdhA3kSOV//PjswdUtowMlnd+5Dj2s7eU5xC52dk7l18HClefSxnvjDtRHKcsrcaAahn2X4sskIQ2pTI7lhgTeaokZkHaEwEDwA2nPKnQeK7yupfctn9gmHdgCifccQP/Rs83M9ngv6zRqgzBgGUbHxhA4CA8W6MSN7STPlYUAvMNi0h91XgdBQyIc9ZOTFuw38/tGb9enNIefoHtU7Qw13joNehlIOMQqa9aHgIEooz4eRoVBdN3woVMMNDwrAh99xiLZvbw45n+u5MbyzAIq/iSc3by0oT5pgOVAW9MP6Hyi2HmoRlOIOBGEBt9js9TUNRTeHXy00N+GPpaFMNV3KvynQm/Xp1c85fj3UlL8MJYqKmsbp5RiZOg8qb6if/wQFhqmHjyeO31MAi1yoU/icAUW1rI+pLw+9ST7k2HoG1GIoSQIhh3c62ZDEZOOLvpT4d5JLxSgHaw9EDu2NAYMf2hviGRCRDJYCfXhQorB+rL03OXaWSw9IAWVtuc1+uBqUCtWgVKi3Q2kq1aBUqAalQjUoFapBqU6H8AueGQjd+Xl8JAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.CloseMode>
+        <InArgument x:TypeArguments="uix:NAppCloseMode">
+          <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">
+            <CSharpValue.Result>
+              <OutArgument x:TypeArguments="uix:NAppCloseMode" />
+            </CSharpValue.Result>UiPath.UIAutomationNext.Enums.NAppCloseMode.Always</CSharpValue>
+        </InArgument>
+      </uix:NApplicationCard.CloseMode>
+      <uix:NApplicationCard.InUiElement>
+        <InArgument x:TypeArguments="ui:UiElement" />
+      </uix:NApplicationCard.InUiElement>
+      <uix:NApplicationCard.OpenMode>
+        <InArgument x:TypeArguments="uix:NAppOpenMode">
+          <CSharpValue x:TypeArguments="uix:NAppOpenMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">
+            <CSharpValue.Result>
+              <OutArgument x:TypeArguments="uix:NAppOpenMode" />
+            </CSharpValue.Result>UiPath.UIAutomationNext.Enums.NAppOpenMode.Never</CSharpValue>
+        </InArgument>
+      </uix:NApplicationCard.OpenMode>
+      <uix:NApplicationCard.OutUiElement>
+        <OutArgument x:TypeArguments="ui:UiElement" />
+      </uix:NApplicationCard.OutUiElement>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" InformativeScreenshot="5921e4929df83d10124392139987b65d.jpg" Selector="&lt;html title='City Grill UiPath*' app='chrome.exe' /&gt;" Title="City Grill UiPath" Url="https://uipath.citygrill.ro/" />
+      </uix:NApplicationCard.TargetApp>
+      <uix:NApplicationCard.Timeout>
+        <InArgument x:TypeArguments="x:Double" />
+      </uix:NApplicationCard.Timeout>
+      <uix:NApplicationCard.UserDataFolderPath>
+        <InArgument x:TypeArguments="x:String" />
+      </uix:NApplicationCard.UserDataFolderPath>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

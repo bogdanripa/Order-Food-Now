@@ -1,0 +1,221 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Clean_up" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1697,2388" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="34">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Clean_up" sap:VirtualizedContainerService.HintSize="834,2323" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="792,148" sap2010:WorkflowViewState.IdRef="LogMessage_1">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">"Cleaning up"</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: City Grill UiPath" sap:VirtualizedContainerService.HintSize="792,2045" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="45fca4fa-efdf-4871-8f9a-bd4657dfe1be" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="710,1697" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click '2 SHOPPING CART CLOSE'" sap:VirtualizedContainerService.HintSize="668,312" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="45fca4fa-efdf-4871-8f9a-bd4657dfe1be" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://uipath.citygrill.ro/" DesignTimeRectangle="1738, 111, 36, 52" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'2 SHOPPING CART CLOSE'" FullSelectorArgument="&lt;webctrl tag='DIV' class='tt-cart tt-dropdown-obj' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' class='tt-cart tt-dropdown-obj' type='' aaname='              ' check:text='2&amp;#xA;    &amp;#xA;&amp;#xA;    &amp;#xA;      &amp;#xA;        SHOPPING CART&amp;#xA;        CLOSE&amp;#xA;      &amp;#xA;      &amp;#xA;        &amp;#xA;          &amp;#xA;&amp;#xA;        ' /&gt;" Guid="f7f233ff-d109-4268-8cc6-fcd1deaea93b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAA4CAYAAACPKLr2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJISURBVGhD7Za/SxthGMf7b9xYcBEKN2aTDmYLbkGH4hJwCBi0QwnpdDiYOMgRhDRD0YrcYolQuA5tOkgGl4CBS4RMchYiEZcDkaMdvn3f5GJj7mfeN+l1eD/whPe5y/DheZ/3ee8F/gNujA7Ka+vIvVx0ReyCxvcf2Fp45SlHI1ZBWrkgORqxCvpt63jEJki31kvo4OMlHm0bvx5o/IxP8Hj7nafgp90P0FaG673qVXyCylLSJeeOz/EJhh0OGspRjBUMFXxdQteyZydotQ7xNpWAJCXwJq/BeHBe+BC4xUSuc2vDapRmJNiuIJUqot6zSWLD/FpAelNHf/jWE79DkltR0b2zca/vQCH5TASNsgzlnMqNsKBvp6FdO6kHfmPmokte/h6NmRltcXNfgtp0EgevZ5PMd1D3ashIEum58JDf10lN3cz3qmuqkPaHJQqsoFVHYbkCY/jYxdw+FvpnGWROzcHaKCegtgbLJ/4+M6DKChrjLTrBXD633AfDjz5qGxnUbpw0AFpNerrpCKJVpcEoaKGeT6LSdtIQohwYPxgFTWirWehBg24M85S0w1nEP0/AKNiEKqnkNxr2uQK57HdMgmETpCNmoxZ4UzyD3DTJvPeoCYNNsKVC3mmQSy0ifR3ZVY00xvQwCVrfCkhWp9ky2hLFyC0xDpOgeZJG9ss0Te+Mmp6TTgGTIJ2BXldacMiuYR4Fth78hwhBXoQgL0KQFyHIixDkRQjyIgR5EYK8CEFehCAvQpAXIciLEORFCPIiBPkA/gDURzMnF+C19AAAAABJRU5ErkJggg==" InformativeScreenshot="1be464dbfcd02aa48e5c287706072842.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='City Grill UiPath' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times" sap:VirtualizedContainerService.HintSize="668,1255" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="10" StartAt="1">
+              <ui:RepeatNumberOfTimesX.Body>
+                <ActivityAction x:TypeArguments="x:Int32">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="586,1092" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="ui:UiElement" Name="delEl" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="544,1002" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="45fca4fa-efdf-4871-8f9a-bd4657dfe1be" Version="V3">
+                      <uix:NCheckState.DelayBefore>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:NCheckState.DelayBefore>
+                      <uix:NCheckState.Exists>
+                        <OutArgument x:TypeArguments="x:Boolean" />
+                      </uix:NCheckState.Exists>
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="462,613" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="400,148" sap2010:WorkflowViewState.IdRef="LogMessage_2">
+                            <ui:LogMessage.Message>
+                              <InArgument x:TypeArguments="x:Object">
+                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">"Deleting cart item"</CSharpValue>
+                              </InArgument>
+                            </ui:LogMessage.Message>
+                          </ui:LogMessage>
+                          <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click" sap:VirtualizedContainerService.HintSize="400,303" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="45fca4fa-efdf-4871-8f9a-bd4657dfe1be" Timeout="100" Version="V3">
+                            <uix:NClick.DelayAfter>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:NClick.DelayAfter>
+                            <uix:NClick.DelayBefore>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:NClick.DelayBefore>
+                            <uix:NClick.InUiElement>
+                              <InArgument x:TypeArguments="ui:UiElement">
+                                <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">delEl</CSharpValue>
+                              </InArgument>
+                            </uix:NClick.InUiElement>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="462,154" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:Break sap:VirtualizedContainerService.HintSize="400,32" sap2010:WorkflowViewState.IdRef="Break_1" />
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.InUiElement>
+                        <InArgument x:TypeArguments="ui:UiElement" />
+                      </uix:NCheckState.InUiElement>
+                      <uix:NCheckState.OutUiElement>
+                        <OutArgument x:TypeArguments="ui:UiElement">
+                          <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">delEl</CSharpReference>
+                        </OutArgument>
+                      </uix:NCheckState.OutUiElement>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uipath.citygrill.ro/" DesignTimeRectangle="985, 198, 23, 31" FullSelectorArgument="&lt;webctrl tag='DIV' class='tt-item-close' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                        ' parentid='shopify-section-header-template' tag='A' type='' class='tt-btn-close svg-icon-delete header_delete_cartitem_js' /&gt;" Guid="7d5af1b9-b055-40d6-a88c-19bc4f64eff4" InformativeScreenshot="3710c062061bac9896ab18d06ea52497.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='City Grill UiPath' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="None" />
+                      </uix:NCheckState.Target>
+                      <uix:NCheckState.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:NCheckState.Timeout>
+                    </uix:NCheckState>
+                  </Sequence>
+                </ActivityAction>
+              </ui:RepeatNumberOfTimesX.Body>
+            </ui:RepeatNumberOfTimesX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.InUiElement>
+        <InArgument x:TypeArguments="ui:UiElement" />
+      </uix:NApplicationCard.InUiElement>
+      <uix:NApplicationCard.OutUiElement>
+        <OutArgument x:TypeArguments="ui:UiElement" />
+      </uix:NApplicationCard.OutUiElement>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" InformativeScreenshot="f2be72a65b779fde15f4be21542bebc7.jpg" Selector="&lt;html title='City Grill UiPath' app='chrome.exe' /&gt;" Title="City Grill UiPath" Url="https://uipath.citygrill.ro/" />
+      </uix:NApplicationCard.TargetApp>
+      <uix:NApplicationCard.Timeout>
+        <InArgument x:TypeArguments="x:Double" />
+      </uix:NApplicationCard.Timeout>
+      <uix:NApplicationCard.UserDataFolderPath>
+        <InArgument x:TypeArguments="x:String" />
+      </uix:NApplicationCard.UserDataFolderPath>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
