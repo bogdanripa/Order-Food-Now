@@ -1,4 +1,4 @@
-# UiPath food oredring automation
+# UiPath food ordering automation
 Automatically signs you in to a Microsoft account using your email address, password and 2 factor authentication if needed - in order to order food.
 
 Requires a credential called "Microsoft Account" w/ your UiPath email/password
