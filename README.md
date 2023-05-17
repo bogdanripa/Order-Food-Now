@@ -3,6 +3,8 @@ Automatically signs you in to a Microsoft account using your email address, pass
 
 Requires a credential called "Microsoft Account" w/ your UiPath email/password
 Requires a credential called "2FA Secret" with your 2FA secret key (see bellow)
+Requires an asset called "Yesterdays Order"
+Requires an OpeanAI Integration Servic connection for access to GPT
 
 # Obtaining a secret key (for 2 factor auth):
 
@@ -39,7 +41,11 @@ In your browser:
 * Username: Your UiPath email address
 * Password: Your UiPath password
 * Save and close
+* Create another asset:
+* Name: Yesterdays Order
+* Type: Asset
+* Save and close
 
-Next, publish the automation in your personal workspace and schedule it to run daily (ex: at 9am).
+Next, test the code locally. Then publish the automation in your personal workspace and schedule it to run daily (ex: at 9am).
 
 Please note that you need UiPath robot units available in your UiPath account so that serverless automations can run
