@@ -1,0 +1,152 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "email&Sequence_1",
+        "password&Sequence_1",
+        "secret&Sequence_1",
+        "signedIn&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Get 2FA Code.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "code",
+        "secret"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": [
+        "Org.BouncyCastle.Crypto.Parameters",
+        "Org.BouncyCastle.Crypto.Macs",
+        "Org.BouncyCastle.Crypto.Digests",
+        "Org.BouncyCastle.Crypto"
+      ]
+    },
+    {
+      "Path": "Clean Up.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "delEl&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Order.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "retryCount&Sequence_4",
+        "addressDD&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "floor"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Get All Options.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "todaysOrder&Sequence_1",
+        "yesterdaysOrder&Sequence_1",
+        "empty&Sequence_10",
+        "variable1&Sequence_18",
+        "jdx&Sequence_18",
+        "idx&Sequence_18",
+        "i&Sequence_10",
+        "gptJSONString&Sequence_10",
+        "gptJSONArray&Sequence_10",
+        "prompt&Sequence_1",
+        "el&Sequence_1",
+        "nel&Sequence_3",
+        "rnd&Sequence_3",
+        "text&Sequence_6",
+        "empty&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequence.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "response&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sign In.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "emailEl&Sequence_4",
+        "token&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "email",
+        "password",
+        "secret"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Upsert Credential.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "jsonStringResponse&Sequence_1",
+        "statusCode&Sequence_1",
+        "jsonResponse&Sequence_1",
+        "caStrResp&Sequence_2",
+        "caCode&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "name",
+        "user",
+        "pass"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Pick Options.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "prompt&Sequence_1",
+        "el&Sequence_1",
+        "yesterdaysOrder&Sequence_1",
+        "todaysOrder&Sequence_1",
+        "gptJSONArray&Sequence_10",
+        "gptJSONString&Sequence_10",
+        "i&Sequence_10",
+        "nel&Sequence_3",
+        "text&Sequence_6",
+        "empty&Sequence_6",
+        "idx&Sequence_18",
+        "jdx&Sequence_18"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

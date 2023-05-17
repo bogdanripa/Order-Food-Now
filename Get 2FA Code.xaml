@@ -4,96 +4,92 @@
     <x:Property Name="secret" Type="InArgument(ss:SecureString)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1057,633</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1662,1187</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="64">
-      <x:String>System.Activities</x:String>
-      <x:String>System.Activities.Statements</x:String>
-      <x:String>System.Activities.Expressions</x:String>
-      <x:String>System.Activities.Validation</x:String>
-      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
       <x:String>Microsoft.VisualBasic</x:String>
       <x:String>Microsoft.VisualBasic.Activities</x:String>
       <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
       <x:String>System.Collections</x:String>
       <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
       <x:String>System.Data</x:String>
       <x:String>System.Diagnostics</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.IO</x:String>
       <x:String>System.Linq</x:String>
+      <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Net.Mail</x:String>
-      <x:String>System.Xml</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
       <x:String>System.Text</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
       <x:String>System.Xml.Linq</x:String>
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
-      <x:String>System.Windows.Markup</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
-      <x:String>GlobalConstantsNamespace</x:String>
-      <x:String>System.Runtime.Serialization</x:String>
-      <x:String>System.Reflection</x:String>
-      <x:String>System.Linq.Expressions</x:String>
-      <x:String>System.IO</x:String>
       <x:String>Org.BouncyCastle.Crypto</x:String>
       <x:String>Org.BouncyCastle.Crypto.Digests</x:String>
       <x:String>Org.BouncyCastle.Crypto.Macs</x:String>
       <x:String>Org.BouncyCastle.Crypto.Parameters</x:String>
-      <x:String>System.Globalization</x:String>
-      <x:String>System.Text.RegularExpressions</x:String>
-      <x:String>System.Collections.ObjectModel</x:String>
-      <x:String>System.Security</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
     <scg:List x:TypeArguments="AssemblyReference" Capacity="40">
       <AssemblyReference>Microsoft.CSharp</AssemblyReference>
-      <AssemblyReference>System</AssemblyReference>
-      <AssemblyReference>System.Core</AssemblyReference>
-      <AssemblyReference>System.Activities</AssemblyReference>
-      <AssemblyReference>System.Data</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
-      <AssemblyReference>System.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
-      <AssemblyReference>System.Xaml</AssemblyReference>
-      <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
-      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
-      <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
-      <AssemblyReference>System.Core</AssemblyReference>
-      <AssemblyReference>System.Xml</AssemblyReference>
-      <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>System.Xaml</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.ObjectModel</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
       <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
-      <AssemblyReference>BouncyCastle.Crypto</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>BouncyCastle.Crypto</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="test" sap:VirtualizedContainerService.HintSize="442,342" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="test" sap:VirtualizedContainerService.HintSize="512,356" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InvokeCode ContinueOnError="{x:Null}" Code="byte[] Decode(string encoded)&#xD;&#xA;{&#xD;&#xA;    string alphabet = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ234567&quot;;&#xD;&#xA;    char[] _digits = alphabet.ToCharArray();&#xD;&#xA;    int _mask = _digits.Length - 1;&#xD;&#xA;    int[] NumberTrailingZerosLookup = new int[37]{32, 0, 1, 26, 2, 23, 27, 0, 3, 16, 24, 30, 28, 11, 0, 13, 4, 7, 17, 0, 25, 22, 31, 15, 29, 10, 12, 6, 0, 21, 14, 9, 5, 20, 8, 19, 18};&#xD;&#xA;    int _shift = NumberTrailingZerosLookup[(_digits.Length &amp; -_digits.Length) % 37];&#xD;&#xA;    Dictionary&lt;char, int&gt; _map = new Dictionary&lt;char, int&gt;();&#xD;&#xA;    for (int index = 0; index &lt; _digits.Length; ++index)&#xD;&#xA;        _map.Add(_digits[index], index);&#xD;&#xA;&#xD;&#xA;    encoded = encoded.ToUpper(CultureInfo.InvariantCulture);&#xD;&#xA;    if (encoded.Length == 0)&#xD;&#xA;        return new byte[0];&#xD;&#xA;    byte[] numArray = new byte[encoded.Length * _shift / 8];&#xD;&#xA;    int num1 = 0;&#xD;&#xA;    int num2 = 0;&#xD;&#xA;    int num3 = 0;&#xD;&#xA;    foreach (char key in encoded.ToCharArray())&#xD;&#xA;    {&#xD;&#xA;        if (!_map.ContainsKey(key))&#xD;&#xA;            throw new Exception(&quot;Illegal character: &quot; + key.ToString());&#xD;&#xA;        num1 = num1 &lt;&lt; _shift | _map[key] &amp; _mask;&#xD;&#xA;        num3 += _shift;&#xD;&#xA;        if (num3 &gt;= 8)&#xD;&#xA;        {&#xD;&#xA;            numArray[num2++] = (byte)(num1 &gt;&gt; num3 - 8);&#xD;&#xA;            num3 -= 8;&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    return numArray;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;var SecretKey = Decode(new System.Net.NetworkCredential(string.Empty, secret).Password);&#xD;&#xA;HMac hmac = new HMac((IDigest)new Sha1Digest());&#xD;&#xA;&#xD;&#xA;hmac.Init((ICipherParameters)new KeyParameter(SecretKey));&#xD;&#xA;var CurrentTime = Convert.ToInt64((DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalMilliseconds);&#xD;&#xA;var CodeInterval = (CurrentTime + 0) / ((long)30 * 1000L);&#xD;&#xA;&#xD;&#xA;byte[] bytes = BitConverter.GetBytes(CodeInterval);&#xD;&#xA;if (BitConverter.IsLittleEndian)&#xD;&#xA;    Array.Reverse((Array)bytes);&#xD;&#xA;hmac.BlockUpdate(bytes, 0, bytes.Length);&#xD;&#xA;byte[] numArray1 = new byte[hmac.GetMacSize()];&#xD;&#xA;hmac.DoFinal(numArray1, 0);&#xD;&#xA;int sourceIndex = (int)((IEnumerable&lt;byte&gt;)numArray1).Last&lt;byte&gt;() &amp; 15;&#xD;&#xA;byte[] numArray2 = new byte[4];&#xD;&#xA;Array.Copy((Array)numArray1, sourceIndex, (Array)numArray2, 0, 4);&#xD;&#xA;if (BitConverter.IsLittleEndian)&#xD;&#xA;    Array.Reverse((Array)numArray2);&#xD;&#xA;code = ((BitConverter.ToUInt32(numArray2, 0) &amp; (uint)int.MaxValue) % (uint)Math.Pow(10.0, (double)6)).ToString(new string('0', 6));" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="400,252" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="byte[] Decode(string encoded)&#xA;{&#xA;    string alphabet = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ234567&quot;;&#xA;    char[] _digits = alphabet.ToCharArray();&#xA;    int _mask = _digits.Length - 1;&#xA;    int[] NumberTrailingZerosLookup = new int[37]{32, 0, 1, 26, 2, 23, 27, 0, 3, 16, 24, 30, 28, 11, 0, 13, 4, 7, 17, 0, 25, 22, 31, 15, 29, 10, 12, 6, 0, 21, 14, 9, 5, 20, 8, 19, 18};&#xA;    int _shift = NumberTrailingZerosLookup[(_digits.Length &amp; -_digits.Length) % 37];&#xA;    Dictionary&lt;char, int&gt; _map = new Dictionary&lt;char, int&gt;();&#xA;    for (int index = 0; index &lt; _digits.Length; ++index)&#xA;        _map.Add(_digits[index], index);&#xA;&#xA;    encoded = encoded.ToUpper(CultureInfo.InvariantCulture);&#xA;    if (encoded.Length == 0)&#xA;        return new byte[0];&#xA;    byte[] numArray = new byte[encoded.Length * _shift / 8];&#xA;    int num1 = 0;&#xA;    int num2 = 0;&#xA;    int num3 = 0;&#xA;    foreach (char key in encoded.ToCharArray())&#xA;    {&#xA;        if (!_map.ContainsKey(key))&#xA;            throw new Exception(&quot;Illegal character: &quot; + key.ToString());&#xA;        num1 = num1 &lt;&lt; _shift | _map[key] &amp; _mask;&#xA;        num3 += _shift;&#xA;        if (num3 &gt;= 8)&#xA;        {&#xA;            numArray[num2++] = (byte)(num1 &gt;&gt; num3 - 8);&#xA;            num3 -= 8;&#xA;        }&#xA;    }&#xA;    return numArray;&#xA;}&#xA;&#xA;var SecretKey = Decode(new System.Net.NetworkCredential(string.Empty, secret).Password);&#xA;HMac hmac = new HMac((IDigest)new Sha1Digest());&#xA;&#xA;hmac.Init((ICipherParameters)new KeyParameter(SecretKey));&#xA;var CurrentTime = Convert.ToInt64((DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalMilliseconds);&#xA;var CodeInterval = (CurrentTime + 0) / ((long)30 * 1000L);&#xA;&#xA;byte[] bytes = BitConverter.GetBytes(CodeInterval);&#xA;if (BitConverter.IsLittleEndian)&#xA;    Array.Reverse((Array)bytes);&#xA;hmac.BlockUpdate(bytes, 0, bytes.Length);&#xA;byte[] numArray1 = new byte[hmac.GetMacSize()];&#xA;hmac.DoFinal(numArray1, 0);&#xA;int sourceIndex = (int)((IEnumerable&lt;byte&gt;)numArray1).Last&lt;byte&gt;() &amp; 15;&#xA;byte[] numArray2 = new byte[4];&#xA;Array.Copy((Array)numArray1, sourceIndex, (Array)numArray2, 0, 4);&#xA;if (BitConverter.IsLittleEndian)&#xA;    Array.Reverse((Array)numArray2);&#xA;code = ((BitConverter.ToUInt32(numArray2, 0) &amp; (uint)int.MaxValue) % (uint)Math.Pow(10.0, (double)6)).ToString(new string('0', 6));" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
       <ui:InvokeCode.Arguments>
         <InArgument x:TypeArguments="ss:SecureString" x:Key="secret">
           <CSharpValue x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">secret</CSharpValue>

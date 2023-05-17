@@ -1,85 +1,80 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="Clean_up" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1697,2388" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="34">
-      <x:String>System.Activities</x:String>
-      <x:String>System.Activities.Statements</x:String>
-      <x:String>System.Activities.Expressions</x:String>
-      <x:String>System.Activities.Validation</x:String>
-      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
       <x:String>Microsoft.VisualBasic</x:String>
       <x:String>Microsoft.VisualBasic.Activities</x:String>
       <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
       <x:String>System.Collections</x:String>
       <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
       <x:String>System.Data</x:String>
       <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
       <x:String>System.Linq</x:String>
+      <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Net.Mail</x:String>
-      <x:String>System.Xml</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
       <x:String>System.Text</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
       <x:String>System.Xml.Linq</x:String>
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
-      <x:String>System.Windows.Markup</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
-      <x:String>GlobalConstantsNamespace</x:String>
-      <x:String>UiPath.UIAutomationNext.Enums</x:String>
-      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
-      <x:String>System.Collections.ObjectModel</x:String>
-      <x:String>UiPath.UIAutomationNext.Activities</x:String>
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
-      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
-      <x:String>System.Runtime.Serialization</x:String>
-      <x:String>System.Drawing</x:String>
       <x:String>UiPath.Shared.Activities.Business</x:String>
-      <x:String>System.Reflection</x:String>
-      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
     <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
       <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
-      <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
-      <AssemblyReference>System.Activities</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
-      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
-      <AssemblyReference>System.Data</AssemblyReference>
-      <AssemblyReference>System</AssemblyReference>
-      <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>System.Xaml</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
-      <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>System.Drawing.Common</AssemblyReference>
-      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Clean_up" sap:VirtualizedContainerService.HintSize="834,2323" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -95,7 +90,7 @@
         </InArgument>
       </ui:LogMessage.Message>
     </ui:LogMessage>
-    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: City Grill UiPath" sap:VirtualizedContainerService.HintSize="792,2045" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="45fca4fa-efdf-4871-8f9a-bd4657dfe1be" Version="V2">
+    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: City Grill UiPath" sap:VirtualizedContainerService.HintSize="792,2045" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="45fca4fa-efdf-4871-8f9a-bd4657dfe1be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -107,7 +102,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ClickType="Single" DisplayName="Click '2 SHOPPING CART CLOSE'" sap:VirtualizedContainerService.HintSize="668,312" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="45fca4fa-efdf-4871-8f9a-bd4657dfe1be" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '2 SHOPPING CART CLOSE'" sap:VirtualizedContainerService.HintSize="668,312" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="45fca4fa-efdf-4871-8f9a-bd4657dfe1be" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://uipath.citygrill.ro/" DesignTimeRectangle="1738, 111, 36, 52" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'2 SHOPPING CART CLOSE'" FullSelectorArgument="&lt;webctrl tag='DIV' class='tt-cart tt-dropdown-obj' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' class='tt-cart tt-dropdown-obj' type='' aaname='              ' check:text='2&amp;#xA;    &amp;#xA;&amp;#xA;    &amp;#xA;      &amp;#xA;        SHOPPING CART&amp;#xA;        CLOSE&amp;#xA;      &amp;#xA;      &amp;#xA;        &amp;#xA;          &amp;#xA;&amp;#xA;        ' /&gt;" Guid="f7f233ff-d109-4268-8cc6-fcd1deaea93b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAA4CAYAAACPKLr2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJISURBVGhD7Za/SxthGMf7b9xYcBEKN2aTDmYLbkGH4hJwCBi0QwnpdDiYOMgRhDRD0YrcYolQuA5tOkgGl4CBS4RMchYiEZcDkaMdvn3f5GJj7mfeN+l1eD/whPe5y/DheZ/3ee8F/gNujA7Ka+vIvVx0ReyCxvcf2Fp45SlHI1ZBWrkgORqxCvpt63jEJki31kvo4OMlHm0bvx5o/IxP8Hj7nafgp90P0FaG673qVXyCylLSJeeOz/EJhh0OGspRjBUMFXxdQteyZydotQ7xNpWAJCXwJq/BeHBe+BC4xUSuc2vDapRmJNiuIJUqot6zSWLD/FpAelNHf/jWE79DkltR0b2zca/vQCH5TASNsgzlnMqNsKBvp6FdO6kHfmPmokte/h6NmRltcXNfgtp0EgevZ5PMd1D3ashIEum58JDf10lN3cz3qmuqkPaHJQqsoFVHYbkCY/jYxdw+FvpnGWROzcHaKCegtgbLJ/4+M6DKChrjLTrBXD633AfDjz5qGxnUbpw0AFpNerrpCKJVpcEoaKGeT6LSdtIQohwYPxgFTWirWehBg24M85S0w1nEP0/AKNiEKqnkNxr2uQK57HdMgmETpCNmoxZ4UzyD3DTJvPeoCYNNsKVC3mmQSy0ifR3ZVY00xvQwCVrfCkhWp9ky2hLFyC0xDpOgeZJG9ss0Te+Mmp6TTgGTIJ2BXldacMiuYR4Fth78hwhBXoQgL0KQFyHIixDkRQjyIgR5EYK8CEFehCAvQpAXIciLEORFCPIiBPkA/gDURzMnF+C19AAAAABJRU5ErkJggg==" InformativeScreenshot="1be464dbfcd02aa48e5c287706072842.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='City Grill UiPath' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -148,7 +143,7 @@
                               </InArgument>
                             </ui:LogMessage.Message>
                           </ui:LogMessage>
-                          <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click" sap:VirtualizedContainerService.HintSize="400,303" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="45fca4fa-efdf-4871-8f9a-bd4657dfe1be" Timeout="100" Version="V3">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click" sap:VirtualizedContainerService.HintSize="400,303" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="45fca4fa-efdf-4871-8f9a-bd4657dfe1be" Timeout="100" Version="V3">
                             <uix:NClick.DelayAfter>
                               <InArgument x:TypeArguments="x:Double" />
                             </uix:NClick.DelayAfter>

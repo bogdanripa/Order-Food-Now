@@ -5,110 +5,104 @@
     <x:Property Name="secret" Type="InArgument(ss:SecureString)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>4526,812</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>4946,841</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="70">
-      <x:String>System.Activities</x:String>
-      <x:String>System.Activities.Statements</x:String>
-      <x:String>System.Activities.Expressions</x:String>
-      <x:String>System.Activities.Validation</x:String>
-      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
       <x:String>Microsoft.VisualBasic</x:String>
       <x:String>Microsoft.VisualBasic.Activities</x:String>
       <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
       <x:String>System.Collections</x:String>
       <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
       <x:String>System.Data</x:String>
       <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
       <x:String>System.Linq</x:String>
+      <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Net.Mail</x:String>
-      <x:String>System.Xml</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
       <x:String>System.Text</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
       <x:String>System.Xml.Linq</x:String>
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
-      <x:String>System.Windows.Markup</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
-      <x:String>GlobalConstantsNamespace</x:String>
-      <x:String>System.Reflection</x:String>
-      <x:String>System.Collections.ObjectModel</x:String>
-      <x:String>System.Security</x:String>
-      <x:String>UiPath.UIAutomationNext.Enums</x:String>
-      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
-      <x:String>UiPath.UIAutomationNext.Activities</x:String>
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
-      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
-      <x:String>System.Runtime.Serialization</x:String>
-      <x:String>System.Drawing</x:String>
-      <x:String>System.Linq.Expressions</x:String>
       <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
     <scg:List x:TypeArguments="AssemblyReference" Capacity="88">
       <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
-      <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Algorithms</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Cng</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Csp</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Encoding</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.OpenSsl</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
-      <AssemblyReference>System.Activities</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
-      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
-      <AssemblyReference>System.Data</AssemblyReference>
-      <AssemblyReference>System</AssemblyReference>
-      <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>System.Xaml</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.ObjectModel</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>System.Drawing.Common</AssemblyReference>
-      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography.Algorithms</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography.Encoding</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography.Primitives</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography.OpenSsl</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography.Cng</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography.Csp</AssemblyReference>
-      <AssemblyReference>Otp.NET</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sign_In" sap:VirtualizedContainerService.HintSize="4536,186" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sign_In" sap:VirtualizedContainerService.HintSize="4956,198" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Parallel sap:VirtualizedContainerService.HintSize="4494,96" sap2010:WorkflowViewState.IdRef="Parallel_1">
-      <uix:NCheckState CheckVisibility="True" DisplayName="Check App State - Pick an account" sap:VirtualizedContainerService.HintSize="400,40" sap2010:WorkflowViewState.IdRef="NCheckState_1" Timeout="120" Version="V3">
+    <Parallel sap:VirtualizedContainerService.HintSize="4894,87" sap2010:WorkflowViewState.IdRef="Parallel_1">
+      <uix:NCheckState CheckVisibility="True" DisplayName="Check App State - Pick an account" sap:VirtualizedContainerService.HintSize="450,40" sap2010:WorkflowViewState.IdRef="NCheckState_1" Timeout="120" Version="V3">
         <uix:NCheckState.DelayBefore>
           <InArgument x:TypeArguments="x:Double" />
         </uix:NCheckState.DelayBefore>
@@ -116,20 +110,20 @@
           <OutArgument x:TypeArguments="x:Boolean" />
         </uix:NCheckState.Exists>
         <uix:NCheckState.IfExists>
-          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="730,1359" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="512,614" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="668,148" sap2010:WorkflowViewState.IdRef="LogMessage_1">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,141" sap2010:WorkflowViewState.IdRef="LogMessage_1">
               <ui:LogMessage.Message>
                 <InArgument x:TypeArguments="x:Object">
                   <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">"Pick an account"</CSharpValue>
                 </InArgument>
               </ui:LogMessage.Message>
             </ui:LogMessage>
-            <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: Sign in to your account" sap:VirtualizedContainerService.HintSize="668,1049" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V2">
+            <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: Sign in to your account" sap:VirtualizedContainerService.HintSize="450,322" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -158,7 +152,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NClick ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="400,32" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V3">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="400,32" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V3">
                             <uix:NClick.DelayAfter>
                               <InArgument x:TypeArguments="x:Double" />
                             </uix:NClick.DelayAfter>
@@ -192,7 +186,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NClick ClickType="Single" DisplayName="Click 'Use another account'" sap:VirtualizedContainerService.HintSize="400,32" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Use another account'" sap:VirtualizedContainerService.HintSize="400,32" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
                             <uix:NClick.DelayAfter>
                               <InArgument x:TypeArguments="x:Double" />
                             </uix:NClick.DelayAfter>
@@ -317,7 +311,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </uix:NCheckState>
-      <uix:NCheckState CheckVisibility="True" DisplayName="Check App State - Sign in" sap:VirtualizedContainerService.HintSize="400,40" sap2010:WorkflowViewState.IdRef="NCheckState_3" Timeout="120" Version="V3">
+      <uix:NCheckState CheckVisibility="True" DisplayName="Check App State - Sign in" sap:VirtualizedContainerService.HintSize="450,40" sap2010:WorkflowViewState.IdRef="NCheckState_3" Timeout="120" Version="V3">
         <uix:NCheckState.DelayBefore>
           <InArgument x:TypeArguments="x:Double" />
         </uix:NCheckState.DelayBefore>
@@ -325,35 +319,32 @@
           <OutArgument x:TypeArguments="x:Boolean" />
         </uix:NCheckState.Exists>
         <uix:NCheckState.IfExists>
-          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="586,1370" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="512,614" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="524,148" sap2010:WorkflowViewState.IdRef="LogMessage_2">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,141" sap2010:WorkflowViewState.IdRef="LogMessage_2">
               <ui:LogMessage.Message>
                 <InArgument x:TypeArguments="x:Object">
                   <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">"Type the email address"</CSharpValue>
                 </InArgument>
               </ui:LogMessage.Message>
             </ui:LogMessage>
-            <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: Sign in to your account" sap:VirtualizedContainerService.HintSize="524,1060" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V2">
+            <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: Sign in to your account" sap:VirtualizedContainerService.HintSize="450,322" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="442,712" sap2010:WorkflowViewState.IdRef="Sequence_9">
-                    <Sequence.Variables>
-                      <Variable x:TypeArguments="ui:UiElement" Name="emailEl" />
-                    </Sequence.Variables>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="492,437" sap2010:WorkflowViewState.IdRef="Sequence_9">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="400,270" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?prompt=select_account&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Faccount.uipath.com%2Flogin%2Fcallback&amp;scope=User.Read%20openid%20email%20profile%20&amp;state=WLh_ozBxIbvjp-QBqyUD5vFCn2MW-BW8&amp;client_id=eb812cb0-7881-44a8-82f7-df95f812e34d" ContentHash="eEMU1hiC7kmEEW88sk95Ig" DesignTimeRectangle="786, 490, 348, 36" ElementType="InputBox" FriendlyName="'email'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='email' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' class='form-control ltr_override input ext-input text-box ext-text-box' aaname='' /&gt;" Guid="7102a415-7c8a-4f0c-8a72-7f3a575d1cda" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWAAAAAoCAYAAADAHSD5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARNSURBVHhe7Zo7TmNBEEXZB/tj9sEKIIWUkICAYCQyIkIiIhbAAohIPLqWr3Vd041/2G3jc6Qnv/5VVddTXbcfnE0AAGAICDAAwCAQYACAQSDAAACDQIABAAaBAAMADAIBBgAYBAIMADAIBBgAYBBzAT4/P5/dAQDAPkCAAQAGgQADAAwCAQYAGAQCDAAwiAUBfnx8nFxcXCxcd3d3k6+vr9msn0X+rq+vJ5+fn9NL9+/v77PR7ZAd2z4F9Iz0rPLZvby8TMd+OrcA8DP8J8Au2n2DAG+Oc5fPTn3Pz8/zewQY4PBAgH8By/aKAAMcJisLsIv89fV1/hNX8+tP31rkmuOxy8vLycfHx2xkMvXlVxzriITnvr29LfjO2B2vPuVX42pXkdIar682en5qjGqnjVX2YOzDa2uMzpFOsxrP+IxyenV1tZDbxD4cl9uy+/DwMH1Giezc3t5O59m/ctCLUWyTA4BTZS0BVmG5WFWkFjYXm9ZmcerTP4OFi9nvlLNtUVilcD03Bd19jt/x2r6/KFJsdJ/xVBstP3WP8pNtzftODBPnMPdc7autfTimHtpLT/i8D43VPNT4hXx53P4zbzXGbXIAcMos/SOcC79VqJqfhakxnZx6had+n6yEbG8jwI7NpD3ZSeEUuYeeSGhOjSn9qM97tJjVmJWTGluLmj9RbcpOzXsPrdEzq/v2PjQuf95fHROr+M812+YA4JRZ+xVEFmKdr7EqwLqXIFjQ04bWWgyyqJfRm6u27bXizb7WuFC8/pJo+ck+33tveVVhrVi4WvnOvGaOVkVrFINtOM6bm5umLflzvNpXzmn5d+zb5gDg1NmpAGssT2MpbiKL24WcYtejNzfFoxVv9uXcZBMBzvFVSRGrZF4zR+sgu96r45QA19OxUPv+/n7qoz7Tlv+MfZscAJw6OxPglsDsWoBlTzGJVrzZp1hWfQWRfrLPe+zlbBmK1fGamrfM0TpkrjNm2at5kW0JsMb9/EzLv9bW57xpDgBOmZ2egFNgXKhpI4tbfRYJj1VxMp6btuQzBbUVb+2T/RSXGkNti9qnz3qq1H+KZA56OdUcrU37mZNWu4XWVx+Z+xqz+jMPQutbryjUr9cJaT9ti2U5AIA2S/8I50JVkdWi1fwsTI2lALvwZUcFqqL0qUxobU+Aq+3Ec2XP9nV5rWjF29uD11cbNSbR6rNI+bI4aV/aX86tWIS9tiWAywS42sgYRI3ZcaVo2kaN1f79b3CtGEUvBwDQZ0GADwUVt34SWxwqLRE8RBSnxEqfh45ynV+OZpUvAADYjIMUYImATlC9oj8WAZaoPT09zVqHi0/ErVMrAgywOw5SgJdxLAJ8DEh0v3tlgAAD7I6jFGAAgN/AXIABAGC/IMAAAINAgAEABoEAAwAMAgEGABgEAgwAMAgEGABgEAgwAMAg5gJ89ucvFxcXF9ceLsMJGABgEAgwAMAQJpN/LzcVKn8ekQcAAAAASUVORK5CYII=" InformativeScreenshot="45fe183c964d1f664ff332f5a58819a8.png" Reference="7Rs1aSJcXkyTi8VZ570VcQ/gLrRIrP-Z0uTqZgUf9oxTA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in to your account' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
                       </uix:NTypeInto.Target>
@@ -363,7 +354,7 @@
                         </InArgument>
                       </uix:NTypeInto.Text>
                     </uix:NTypeInto>
-                    <uix:NClick ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="400,312" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="450,129" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?prompt=select_account&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fid-alpha.uipath.com%2Flogin%2Fcallback&amp;scope=User.Read%20openid%20email%20profile%20&amp;state=ITMcYrTYmvo9OT-vJMQohj-fZJ_jcPm1&amp;client_id=eb812cb0-7881-44a8-82f7-df95f812e34d" ContentHash="3vY9YqyHvk6QokPTpNeO1Q" DesignTimeRectangle="1036, 576, 108, 32" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Next' check:text='Next' /&gt;" Guid="324f6b6c-cba2-4480-a9c3-c1f7caf657a5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAkCAYAAABR/76qAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGuSURBVHhe7ZU9SgNBAIVzNu9hbe0VPIAnEA9gZWFhYZlKEEGQNLEQRZAIQQOGEGTkBb9l3GywMbJP3gePmZ2fXZhvZ2ZQgjURaE4jcLB3nhgFItA0EIGmgQg0DUSgaSACTQMRaBqIQNNABJoGItA0EIGmAQuBB2fjslh+lNun2VrfzuFleZzOy9HwYa3vPwesBIq2qN8U6PQzgI3AyWxRru5fy9t8WXaPb5q+CPyia1BfgsD9k9FqgeujtGvRaQPV1Sbx+gEuRi/NWNXVdnr93Oxyobq+y7i+BawESoDqWnAWty2Q51qShCNd49jFit676V19DtgJ1LPksKvai66Svk3zJVPvUH7azX0NWApUyVHYXnS1dVEfiSr1zE7kOxG4pbQFKlpkCeBerAW2d2A7/AAR+EfpEqjo+LubvH9bdMS2x9bhCKWkPQK3lE0COQoFi46E+m7TvOF4uqrXgjVfdZX13FpqXwPWAhXuvHrXaJzEAPcfwuuxml/vWPXVcxjXt4CFwGQ9EIGmgQg0DUSgaSACTQMRaBqIQNNABJoGItA0EIGmgUZg8CQCrSnlE6u8izODe8SYAAAAAElFTkSuQmCC" InformativeScreenshot="776e783972562f2ed39ebe33c5a85278.png" Reference="7Rs1aSJcXkyTi8VZ570VcQ/vr1_WHeUj0qMBvbn2dArpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in to your account' /&gt;" SearchSteps="Selector" Visibility="Legacy" />
                       </uix:NClick.Target>
@@ -406,7 +397,7 @@
           </Sequence>
         </uix:NCheckState.IfExists>
         <uix:NCheckState.IfNotExists>
-          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,113" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,103" sap2010:WorkflowViewState.IdRef="Sequence_11">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -430,7 +421,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </uix:NCheckState>
-      <uix:NCheckState CheckVisibility="True" DisplayName="Check App State - Enter password" sap:VirtualizedContainerService.HintSize="400,40" sap2010:WorkflowViewState.IdRef="NCheckState_5" Timeout="120" Version="V3">
+      <uix:NCheckState CheckVisibility="True" DisplayName="Check App State - Enter password" sap:VirtualizedContainerService.HintSize="450,40" sap2010:WorkflowViewState.IdRef="NCheckState_5" Timeout="120" Version="V3">
         <uix:NCheckState.DelayBefore>
           <InArgument x:TypeArguments="x:Double" />
         </uix:NCheckState.DelayBefore>
@@ -438,35 +429,32 @@
           <OutArgument x:TypeArguments="x:Boolean" />
         </uix:NCheckState.Exists>
         <uix:NCheckState.IfExists>
-          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="586,1370" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="512,614" sap2010:WorkflowViewState.IdRef="Sequence_14">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="524,148" sap2010:WorkflowViewState.IdRef="LogMessage_3">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,141" sap2010:WorkflowViewState.IdRef="LogMessage_3">
               <ui:LogMessage.Message>
                 <InArgument x:TypeArguments="x:Object">
                   <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">"Type the password"</CSharpValue>
                 </InArgument>
               </ui:LogMessage.Message>
             </ui:LogMessage>
-            <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: Sign in to your account" sap:VirtualizedContainerService.HintSize="524,1060" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V2">
+            <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: Sign in to your account" sap:VirtualizedContainerService.HintSize="450,322" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="442,712" sap2010:WorkflowViewState.IdRef="Sequence_13">
-                    <Sequence.Variables>
-                      <Variable x:TypeArguments="ui:UiElement" Name="emailEl" />
-                    </Sequence.Variables>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="492,437" sap2010:WorkflowViewState.IdRef="Sequence_13">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="400,270" sap2010:WorkflowViewState.IdRef="NTypeInto_3" IsPassword="True" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NTypeInto_3" IsPassword="True" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
                       <uix:NTypeInto.SecureText>
                         <InArgument x:TypeArguments="ss:SecureString">
                           <CSharpValue x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">password</CSharpValue>
@@ -476,7 +464,7 @@
                         <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?prompt=select_account&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Faccount.uipath.com%2Flogin%2Fcallback&amp;scope=User.Read%20openid%20email%20profile%20&amp;state=WLh_ozBxIbvjp-QBqyUD5vFCn2MW-BW8&amp;client_id=eb812cb0-7881-44a8-82f7-df95f812e34d" ContentHash="qPNKeeqp4ESP18ylf95kOQ" DesignTimeRectangle="786, 568, 348, 36" ElementType="InputBoxPassword" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='form-control input ext-input text-box ext-text-box' aaname='' /&gt;" Guid="3fd565a4-e995-4f0e-8e54-0ce73baa737e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWAAAAAoCAYAAADAHSD5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM3SURBVHhe7dw/TuNMHMbxiAOgFHSIhsPQ0cEV2HtwAtIh0aakRLASHTSUFNBRUeUAiCKKNOix8lg/JhPHltjMCn0/0ij+M+OY5rte8747SgCAKggwAFRCgAGgEgIMAJUQYACohAADQCUEGAAqIcAAUAkBBoBK2gDv7+8vtwAA20CAAaDg9vY2HRwcpNFo1Gto7t3d3XJ1PwQYAAqGxNdDa4YgwABQUApsnzEEAQaAglJc1429vb10fHzcbA/xLcA3Nzfp7Ozs23h7e1vO+D30cz49PS33AGBVHtmucXp6ml5eXprtIVYCHMM0m83S+fn5r4swAQawieM6Ho/b7d3d3bSzs7NyTgF+fX1ttofoDLBoX8d/EwIMYBPF9PLyMi0Wi3R0dJQODw/T5+dnenx8XDn3TwM8nU7TfD5vn4j9eiKGWec1z+e8RvQE7eMa2teIc7w+XjOfo3uJ14n36vUPDw/Np+5T9yu6ptdou/RzAkD0XwTYwZLn5+c2ah8fH2kymbSvJ+I80VxFUfMvLi7adfp8f39v1l9dXa1cLw+ur6nPeM7zfb8OcAyv5Ov8hwEBBtBFMdWo9gpCscqDFsX5+VrTWoVWwYwcTK/x066j7PM6rv0YcfMazfV83YetW7fuXgHAHNk+4+Tk5Gd+Cee/qmvoCTMPZz4nBrS0xmGMc037DqY+dQ1/6hpap0/tl+5FYXXc86DLunX6DgIMoEse2a7xY/8Z2rowKWKKmYMppfnaV2zjPPH6+ETtgOrTsdV6rVU8dUxhjdtRnwCX1nX9nAAgeWT7jiF6B7gUs3XzFUSHNefAiufpffH9/X1zTGuur6+bX6b52jrW9xVEvJ/SutI8AMht/X9F7gpwHjPFz68VFDUF03GOczVPw/QdDrBoO76ecCA3/TLNT9S+dimsPha/T+dLr0MAINr6P8ajUHWFyfHyK4Y4X9s+l79m0H5cFymgm2Jr8Ts0YthLARYf9xqdj/cNALV8CzAAYHsIMABUQoABoBICDACVtAEGAGwXAQaASggwAFRCgAGgEgIMAJUQYACohAADQCUEGAAqaQM8+vOXwWAwGFsYxhMwAFRCgAGgipS+AJFlYSE958kUAAAAAElFTkSuQmCC" InformativeScreenshot="282e7296d521dbc698d35237d2cecc64.png" Reference="7Rs1aSJcXkyTi8VZ570VcQ/6gU6_fFzp0mOySTHIx-YYQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in to your account' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
                       </uix:NTypeInto.Target>
                     </uix:NTypeInto>
-                    <uix:NClick ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="400,312" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="450,129" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?prompt=select_account&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fid-alpha.uipath.com%2Flogin%2Fcallback&amp;scope=User.Read%20openid%20email%20profile%20&amp;state=ITMcYrTYmvo9OT-vJMQohj-fZJ_jcPm1&amp;client_id=eb812cb0-7881-44a8-82f7-df95f812e34d" ContentHash="3vY9YqyHvk6QokPTpNeO1Q" DesignTimeRectangle="1036, 576, 108, 32" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Next' check:text='Next' /&gt;" Guid="324f6b6c-cba2-4480-a9c3-c1f7caf657a5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAkCAYAAABR/76qAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGuSURBVHhe7ZU9SgNBAIVzNu9hbe0VPIAnEA9gZWFhYZlKEEGQNLEQRZAIQQOGEGTkBb9l3GywMbJP3gePmZ2fXZhvZ2ZQgjURaE4jcLB3nhgFItA0EIGmgQg0DUSgaSACTQMRaBqIQNNABJoGItA0EIGmAQuBB2fjslh+lNun2VrfzuFleZzOy9HwYa3vPwesBIq2qN8U6PQzgI3AyWxRru5fy9t8WXaPb5q+CPyia1BfgsD9k9FqgeujtGvRaQPV1Sbx+gEuRi/NWNXVdnr93Oxyobq+y7i+BawESoDqWnAWty2Q51qShCNd49jFit676V19DtgJ1LPksKvai66Svk3zJVPvUH7azX0NWApUyVHYXnS1dVEfiSr1zE7kOxG4pbQFKlpkCeBerAW2d2A7/AAR+EfpEqjo+LubvH9bdMS2x9bhCKWkPQK3lE0COQoFi46E+m7TvOF4uqrXgjVfdZX13FpqXwPWAhXuvHrXaJzEAPcfwuuxml/vWPXVcxjXt4CFwGQ9EIGmgQg0DUSgaSACTQMRaBqIQNNABJoGItA0EIGmgUZg8CQCrSnlE6u8izODe8SYAAAAAElFTkSuQmCC" InformativeScreenshot="776e783972562f2ed39ebe33c5a85278.png" Reference="7Rs1aSJcXkyTi8VZ570VcQ/vr1_WHeUj0qMBvbn2dArpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in to your account' /&gt;" SearchSteps="Selector" Visibility="Legacy" />
                       </uix:NClick.Target>
@@ -543,7 +531,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </uix:NCheckState>
-      <uix:NCheckState CheckVisibility="True" DisplayName="Check App State - Verify account" sap:VirtualizedContainerService.HintSize="400,40" sap2010:WorkflowViewState.IdRef="NCheckState_12" Timeout="120" Version="V3">
+      <uix:NCheckState CheckVisibility="True" DisplayName="Check App State - Verify account" sap:VirtualizedContainerService.HintSize="450,40" sap2010:WorkflowViewState.IdRef="NCheckState_12" Timeout="120" Version="V3">
         <uix:NCheckState.DelayBefore>
           <InArgument x:TypeArguments="x:Double" />
         </uix:NCheckState.DelayBefore>
@@ -551,35 +539,32 @@
           <OutArgument x:TypeArguments="x:Boolean" />
         </uix:NCheckState.Exists>
         <uix:NCheckState.IfExists>
-          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="586,1060" sap2010:WorkflowViewState.IdRef="Sequence_37">
+          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="512,349" sap2010:WorkflowViewState.IdRef="Sequence_37">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="524,148" sap2010:WorkflowViewState.IdRef="LogMessage_5">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,141" sap2010:WorkflowViewState.IdRef="LogMessage_5">
               <ui:LogMessage.Message>
                 <InArgument x:TypeArguments="x:Object">
                   <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">"Account at risk"</CSharpValue>
                 </InArgument>
               </ui:LogMessage.Message>
             </ui:LogMessage>
-            <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: Sign in to your account" sap:VirtualizedContainerService.HintSize="524,750" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V2">
+            <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: Sign in to your account" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" ScopeGuid="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="442,402" sap2010:WorkflowViewState.IdRef="Sequence_36">
-                    <Sequence.Variables>
-                      <Variable x:TypeArguments="ui:UiElement" Name="emailEl" />
-                    </Sequence.Variables>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="492,217" sap2010:WorkflowViewState.IdRef="Sequence_36">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="400,312" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="450,129" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
                       <uix:NClick.DelayAfter>
                         <InArgument x:TypeArguments="x:Double" />
                       </uix:NClick.DelayAfter>
@@ -661,7 +646,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </uix:NCheckState>
-      <uix:NCheckState CheckVisibility="True" DisplayName="Check App State - Suspicious activity" sap:VirtualizedContainerService.HintSize="400,40" sap2010:WorkflowViewState.IdRef="NCheckState_14" Timeout="120" Version="V3">
+      <uix:NCheckState CheckVisibility="True" DisplayName="Check App State - Suspicious activity" sap:VirtualizedContainerService.HintSize="450,40" sap2010:WorkflowViewState.IdRef="NCheckState_14" Timeout="120" Version="V3">
         <uix:NCheckState.DelayBefore>
           <InArgument x:TypeArguments="x:Double" />
         </uix:NCheckState.DelayBefore>
@@ -669,35 +654,32 @@
           <OutArgument x:TypeArguments="x:Boolean" />
         </uix:NCheckState.Exists>
         <uix:NCheckState.IfExists>
-          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="586,1060" sap2010:WorkflowViewState.IdRef="Sequence_45">
+          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="512,349" sap2010:WorkflowViewState.IdRef="Sequence_45">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="524,148" sap2010:WorkflowViewState.IdRef="LogMessage_7">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,141" sap2010:WorkflowViewState.IdRef="LogMessage_7">
               <ui:LogMessage.Message>
                 <InArgument x:TypeArguments="x:Object">
                   <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">"Suspicious activity detected"</CSharpValue>
                 </InArgument>
               </ui:LogMessage.Message>
             </ui:LogMessage>
-            <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: Sign in to your account" sap:VirtualizedContainerService.HintSize="524,750" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" ScopeGuid="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V2">
+            <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: Sign in to your account" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" ScopeGuid="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="442,402" sap2010:WorkflowViewState.IdRef="Sequence_44">
-                    <Sequence.Variables>
-                      <Variable x:TypeArguments="ui:UiElement" Name="emailEl" />
-                    </Sequence.Variables>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="492,217" sap2010:WorkflowViewState.IdRef="Sequence_44">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="400,312" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="450,129" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
                       <uix:NClick.DelayAfter>
                         <InArgument x:TypeArguments="x:Double" />
                       </uix:NClick.DelayAfter>
@@ -779,7 +761,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </uix:NCheckState>
-      <uix:NCheckState CheckVisibility="True" DisplayName="Check App State - Use app code" sap:VirtualizedContainerService.HintSize="400,40" sap2010:WorkflowViewState.IdRef="NCheckState_13" Timeout="120" Version="V3">
+      <uix:NCheckState CheckVisibility="True" DisplayName="Check App State - Use app code" sap:VirtualizedContainerService.HintSize="450,40" sap2010:WorkflowViewState.IdRef="NCheckState_13" Timeout="120" Version="V3">
         <uix:NCheckState.DelayBefore>
           <InArgument x:TypeArguments="x:Double" />
         </uix:NCheckState.DelayBefore>
@@ -787,35 +769,32 @@
           <OutArgument x:TypeArguments="x:Boolean" />
         </uix:NCheckState.Exists>
         <uix:NCheckState.IfExists>
-          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="586,1060" sap2010:WorkflowViewState.IdRef="Sequence_41">
+          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="512,349" sap2010:WorkflowViewState.IdRef="Sequence_41">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="524,148" sap2010:WorkflowViewState.IdRef="LogMessage_6">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,141" sap2010:WorkflowViewState.IdRef="LogMessage_6">
               <ui:LogMessage.Message>
                 <InArgument x:TypeArguments="x:Object">
                   <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">"Verify your identity"</CSharpValue>
                 </InArgument>
               </ui:LogMessage.Message>
             </ui:LogMessage>
-            <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: Sign in to your account" sap:VirtualizedContainerService.HintSize="524,750" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V2">
+            <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: Sign in to your account" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" ScopeGuid="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="442,402" sap2010:WorkflowViewState.IdRef="Sequence_40">
-                    <Sequence.Variables>
-                      <Variable x:TypeArguments="ui:UiElement" Name="emailEl" />
-                    </Sequence.Variables>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="492,217" sap2010:WorkflowViewState.IdRef="Sequence_40">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="400,312" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="450,129" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
                       <uix:NClick.DelayAfter>
                         <InArgument x:TypeArguments="x:Double" />
                       </uix:NClick.DelayAfter>
@@ -897,7 +876,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </uix:NCheckState>
-      <uix:NCheckState CheckVisibility="True" DisplayName="Check App State - Enter code" sap:VirtualizedContainerService.HintSize="400,40" sap2010:WorkflowViewState.IdRef="NCheckState_6" Timeout="120" Version="V3">
+      <uix:NCheckState CheckVisibility="True" DisplayName="Check App State - Enter code" sap:VirtualizedContainerService.HintSize="450,40" sap2010:WorkflowViewState.IdRef="NCheckState_6" Timeout="120" Version="V3">
         <uix:NCheckState.DelayBefore>
           <InArgument x:TypeArguments="x:Double" />
         </uix:NCheckState.DelayBefore>
@@ -905,28 +884,27 @@
           <OutArgument x:TypeArguments="x:Boolean" />
         </uix:NCheckState.Exists>
         <uix:NCheckState.IfExists>
-          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="586,1881" sap2010:WorkflowViewState.IdRef="Sequence_18">
+          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="512,349" sap2010:WorkflowViewState.IdRef="Sequence_18">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="524,148" sap2010:WorkflowViewState.IdRef="LogMessage_4">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,141" sap2010:WorkflowViewState.IdRef="LogMessage_4">
               <ui:LogMessage.Message>
                 <InArgument x:TypeArguments="x:Object">
                   <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31">"Type the 2FA code"</CSharpValue>
                 </InArgument>
               </ui:LogMessage.Message>
             </ui:LogMessage>
-            <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: Sign in to your account" sap:VirtualizedContainerService.HintSize="524,1571" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V2">
+            <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: Sign in to your account" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="442,1223" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="492,1051" sap2010:WorkflowViewState.IdRef="Sequence_17">
                     <Sequence.Variables>
-                      <Variable x:TypeArguments="ui:UiElement" Name="emailEl" />
                       <Variable x:TypeArguments="x:String" Name="token" />
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
@@ -934,7 +912,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="test.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="400,212" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Get 2FA Code.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="test.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="450,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Get 2FA Code.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <OutArgument x:TypeArguments="x:String" x:Key="code">
                           <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">token</CSharpReference>
@@ -944,7 +922,7 @@
                         </InArgument>
                       </ui:InvokeWorkflowFile.Arguments>
                     </ui:InvokeWorkflowFile>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Code'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="400,270" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Code'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/common/login" ContentHash="JXZq7ALAiUairevI9dLvfA" DesignTimeRectangle="784, 536, 352, 36" ElementType="InputBox" FriendlyName="'Code'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='tel' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='tel' class='form-control' aaname='' /&gt;" Guid="2df456ba-cfa6-462a-a8d4-44f83ab4c229" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWQAAAAoCAYAAADJ9oCDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHwSURBVHhe7dq/jSIxFMDh7YP+uD6oAGJSSiC4mIiQAiiAAohI5vROGNleH7va+8M7zfdJ1jJ4GLKfnry8TQCkIMgASQgyQBKCDJCEIAMkIcgASQgyQBKCDJCEIAMkIcgASTyCvFgs7q8AeAVBBkhCkAGSEGSAJAQZIIlhkM/n87RcLpsV7/2O/X4/HY/H+xUAvXdBjnBuNpvper3+vA6Xy2U6nU73q68RZIDnmiBHMHe73XS73e7v/jmCDPBcE+SYjD9zNBET82q1ehxnjCIeAS778XoU5PqefioHmJsmyNvt9sMoRrAjxhHlIsJaR7m/LmfSdZBLpIu/OZ0D/A+aIH8UxNiLe/pJNyIeMY9Ix1qv102wQ8S3fC72+vjXzwCYo3dHFs8m5NgbHWuUUMf7sUbPqYNcJubR6p8NMBdNkEeTbe1XU2wf5NGk3QfZmTFAqwlyf67b++qRRf+50T0Ac9cEuRxJ9BNuhLP8Djmm29E/9UrIS3zrsEeI4ziiDnns198Tfw+HQ/O9AHPSBLmIWNbnuv3xQkS53q/jG0qUy36EOO6pg9zfEyueCzBXwyAD8O8JMkASggyQhCADJPEIMgCvJcgASQgyQBKCDJCEIAMkIcgASQgyQBKPIL99+25ZlmW9YBUmZIAkBBkghWn6ARwLVU4g2QXQAAAAAElFTkSuQmCC" InformativeScreenshot="5a2219726a773710d8c95c1d2ae8b5fc.png" Reference="7Rs1aSJcXkyTi8VZ570VcQ/7wBn-tPIDkC75h2nV2b_Dg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in to your account' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
                       </uix:NTypeInto.Target>
@@ -954,12 +932,12 @@
                         </InArgument>
                       </uix:NTypeInto.Text>
                     </uix:NTypeInto>
-                    <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'Remember Code'" sap:VirtualizedContainerService.HintSize="400,219" sap2010:WorkflowViewState.IdRef="NCheck_2" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
+                    <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'Remember Code'" sap:VirtualizedContainerService.HintSize="450,179" sap2010:WorkflowViewState.IdRef="NCheck_2" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
                       <uix:NCheck.Target>
                         <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/common/login" ContentHash="DepdXyoRGk6WoXaqiS7zlA" DesignTimeRectangle="786, 588, 20, 20" ElementType="CheckBox" FriendlyName="'Remember Code'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='checkbox' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='checkbox' class='' aaname='' /&gt;" Guid="a28f8fa5-3718-489e-992d-ab268857c83f" ImageBase64="" InformativeScreenshot="5dfa7344aa205765929dfb42ad1dde4a.png" Reference="7Rs1aSJcXkyTi8VZ570VcQ/yQXRH2OWDUijV3hmM__9wQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in to your account' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
                       </uix:NCheck.Target>
                     </uix:NCheck>
-                    <uix:NClick ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="400,312" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="400,312" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="27c88833-2358-49a8-94c0-6b00f3b207d8" Version="V1">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?prompt=select_account&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fid-alpha.uipath.com%2Flogin%2Fcallback&amp;scope=User.Read%20openid%20email%20profile%20&amp;state=ITMcYrTYmvo9OT-vJMQohj-fZJ_jcPm1&amp;client_id=eb812cb0-7881-44a8-82f7-df95f812e34d" ContentHash="3vY9YqyHvk6QokPTpNeO1Q" DesignTimeRectangle="1036, 576, 108, 32" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Next' check:text='Next' /&gt;" Guid="324f6b6c-cba2-4480-a9c3-c1f7caf657a5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAkCAYAAABR/76qAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGuSURBVHhe7ZU9SgNBAIVzNu9hbe0VPIAnEA9gZWFhYZlKEEGQNLEQRZAIQQOGEGTkBb9l3GywMbJP3gePmZ2fXZhvZ2ZQgjURaE4jcLB3nhgFItA0EIGmgQg0DUSgaSACTQMRaBqIQNNABJoGItA0EIGmAQuBB2fjslh+lNun2VrfzuFleZzOy9HwYa3vPwesBIq2qN8U6PQzgI3AyWxRru5fy9t8WXaPb5q+CPyia1BfgsD9k9FqgeujtGvRaQPV1Sbx+gEuRi/NWNXVdnr93Oxyobq+y7i+BawESoDqWnAWty2Q51qShCNd49jFit676V19DtgJ1LPksKvai66Svk3zJVPvUH7azX0NWApUyVHYXnS1dVEfiSr1zE7kOxG4pbQFKlpkCeBerAW2d2A7/AAR+EfpEqjo+LubvH9bdMS2x9bhCKWkPQK3lE0COQoFi46E+m7TvOF4uqrXgjVfdZX13FpqXwPWAhXuvHrXaJzEAPcfwuuxml/vWPXVcxjXt4CFwGQ9EIGmgQg0DUSgaSACTQMRaBqIQNNABJoGItA0EIGmgUZg8CQCrSnlE6u8izODe8SYAAAAAElFTkSuQmCC" InformativeScreenshot="776e783972562f2ed39ebe33c5a85278.png" Reference="7Rs1aSJcXkyTi8VZ570VcQ/vr1_WHeUj0qMBvbn2dArpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in to your account' /&gt;" SearchSteps="Selector" Visibility="Legacy" />
                       </uix:NClick.Target>
@@ -1026,7 +1004,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </uix:NCheckState>
-      <uix:NCheckState CheckVisibility="True" DisplayName="Check App State - Incorrect username" sap:VirtualizedContainerService.HintSize="400,40" sap2010:WorkflowViewState.IdRef="NCheckState_7" Timeout="120" Version="V3">
+      <uix:NCheckState CheckVisibility="True" DisplayName="Check App State - Incorrect username" sap:VirtualizedContainerService.HintSize="450,40" sap2010:WorkflowViewState.IdRef="NCheckState_7" Timeout="120" Version="V3">
         <uix:NCheckState.DelayBefore>
           <InArgument x:TypeArguments="x:Double" />
         </uix:NCheckState.DelayBefore>
@@ -1034,13 +1012,13 @@
           <OutArgument x:TypeArguments="x:Boolean" />
         </uix:NCheckState.Exists>
         <uix:NCheckState.IfExists>
-          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="462,219" sap2010:WorkflowViewState.IdRef="Sequence_22">
+          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="512,201" sap2010:WorkflowViewState.IdRef="Sequence_22">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Throw sap:VirtualizedContainerService.HintSize="400,97" sap2010:WorkflowViewState.IdRef="Throw_2">
+            <Throw sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Throw_2">
               <InArgument x:TypeArguments="s:Exception">
                 <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">new Exception("Incorrect username")</CSharpValue>
               </InArgument>
